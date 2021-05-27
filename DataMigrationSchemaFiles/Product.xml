@@ -16,12 +16,5 @@
       <field displayname="Status" name="statecode" type="state" />
       <field displayname="Status Reason" name="statuscode" type="status" />
       </fields>
-    <relationships>
-      <relationship name="entitlementproducts" manyToMany="true" relatedEntityName="entitlementproducts" m2mTargetEntity="entitlement" m2mTargetEntityPrimaryKey="entitlementid" />
-      <relationship name="entitlementtemplateproducts" manyToMany="true" relatedEntityName="entitlementtemplateproducts" m2mTargetEntity="entitlementtemplate" m2mTargetEntityPrimaryKey="entitlementtemplateid" />
-      <relationship name="productsalesliterature" manyToMany="true" relatedEntityName="productsalesliterature" m2mTargetEntity="salesliterature" m2mTargetEntityPrimaryKey="salesliteratureid" />
-      <relationship name="msdyn_product_knowledgebaserecord" manyToMany="true" relatedEntityName="msdyn_product_knowledgebaserecord" m2mTargetEntity="knowledgebaserecord" m2mTargetEntityPrimaryKey="knowledgebaserecordid" />
-      <relationship name="msdyn_product_knowledgearticle" manyToMany="true" relatedEntityName="msdyn_product_knowledgearticle" m2mTargetEntity="knowledgearticle" m2mTargetEntityPrimaryKey="knowledgearticleid" />
-    </relationships>
-  </entity>
+      </entity>
 </entities>
