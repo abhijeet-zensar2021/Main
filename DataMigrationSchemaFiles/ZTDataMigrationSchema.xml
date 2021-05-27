@@ -1,0 +1,111 @@
+<entities >
+  <entity name="product" displayname="Product" etc="1024" primaryidfield="productid" primarynamefield="name" disableplugins="false">
+    <fields>
+      <field displayname="(Deprecated) Stage Id" name="stageid" type="guid" />
+      <field displayname="(Deprecated) Traversed Path" name="traversedpath" type="string" />
+      <field displayname="Convert to Customer Asset" name="msdyn_converttocustomerasset" type="bool" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (External Party)" name="createdbyexternalparty" type="entityreference" lookupType="externalparty" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
+      <field displayname="Current Cost" name="currentcost" type="money" />
+      <field displayname="Current Cost (Base)" name="currentcost_base" type="money" />
+      <field displayname="Decimals Supported" name="quantitydecimal" type="number" />
+      <field displayname="Default Price List" name="pricelevelid" type="entityreference" lookupType="pricelevel" />
+      <field displayname="Default Unit" name="defaultuomid" type="entityreference" lookupType="uom" />
+      <field displayname="Default Vendor" name="msdyn_defaultvendor" type="entityreference" lookupType="account" customfield="true" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Entity Image" name="entityimage" type="imagedata" />
+      <field displayname="entityimageid" name="entityimageid" type="guid" />
+      <field displayname="Exchange Rate" name="exchangerate" type="decimal" />
+      <field displayname="Field Service Product Type" name="msdyn_fieldserviceproducttype" type="optionsetvalue" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Is Kit" name="iskit" type="bool" />
+      <field displayname="List Price" name="price" type="money" />
+      <field displayname="List Price (Base)" name="price_base" type="money" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (External Party)" name="modifiedbyexternalparty" type="entityreference" lookupType="externalparty" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="name" type="string" />
+      <field displayname="Parent" name="parentproductid" type="entityreference" lookupType="product" />
+      <field displayname="Process Id" name="processid" type="guid" />
+      <field updateCompare="true" displayname="Product" name="productid" type="guid" primaryKey="true" />
+      <field displayname="Product ID" name="productnumber" type="string" />
+      <field displayname="Product Structure" name="productstructure" type="optionsetvalue" />
+      <field displayname="Product Type" name="producttypecode" type="optionsetvalue" />
+      <field displayname="Purchase Name" name="msdyn_purchasename" type="string" customfield="true" />
+      <field displayname="Quantity On Hand" name="quantityonhand" type="decimal" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Size" name="size" type="string" />
+      <field displayname="Standard Cost" name="standardcost" type="money" />
+      <field displayname="Standard Cost (Base)" name="standardcost_base" type="money" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Stock Item" name="isstockitem" type="bool" />
+      <field displayname="Stock Volume" name="stockvolume" type="decimal" />
+      <field displayname="Stock Weight" name="stockweight" type="decimal" />
+      <field displayname="Subject" name="subjectid" type="entityreference" lookupType="subject" />
+      <field displayname="Supplier Name" name="suppliername" type="string" />
+      <field displayname="Taxable" name="msdyn_taxable" type="bool" customfield="true" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Transaction Category" name="msdyn_transactioncategory" type="entityreference" lookupType="msdyn_transactioncategory" customfield="true" />
+      <field displayname="Unit Group" name="defaultuomscheduleid" type="entityreference" lookupType="uomschedule" />
+      <field displayname="UPC Code" name="msdyn_upccode" type="string" customfield="true" />
+      <field displayname="URL" name="producturl" type="string" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Valid From" name="validfromdate" type="datetime" />
+      <field displayname="Valid To" name="validtodate" type="datetime" />
+      <field displayname="Vendor" name="vendorname" type="string" />
+      <field displayname="Vendor Name" name="vendorpartnumber" type="string" />
+    </fields>
+  </entity>
+  <entity name="hsl_configsetting" displayname="Config Setting" etc="10677" primaryidfield="hsl_configsettingid" primarynamefield="hsl_name" disableplugins="false">
+    <fields>
+      <field displayname="Config Setting" name="hsl_configsettingid" type="guid" primaryKey="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="hsl_name" type="string" customfield="true" />
+      <field displayname="Organization Id" name="organizationid" type="entityreference" lookupType="organization" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Secure Value" name="hsl_securevalue" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+  </entity>
+  <entity name="hsl_type" displayname="Type" etc="10679" primaryidfield="hsl_typeid" primarynamefield="hsl_name" disableplugins="false">
+    <fields>
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="hsl_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Purpose" name="hsl_purpose" type="optionsetvalue" customfield="true" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="Sort Order" name="hsl_sortorder" type="number" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="Type" name="hsl_typeid" type="guid" primaryKey="true" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships />
+  </entity>
+</entities>
