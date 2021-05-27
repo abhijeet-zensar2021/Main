@@ -1,18 +1,7 @@
 <entities >
   <entity name="product" displayname="Product" etc="1024" primaryidfield="productid" primarynamefield="name" disableplugins="false">
     <fields>
-      <field displayname="(Deprecated) Stage Id" name="stageid" type="guid" />
-      <field displayname="(Deprecated) Traversed Path" name="traversedpath" type="string" />
-      <field displayname="Convert to Customer Asset" name="msdyn_converttocustomerasset" type="bool" customfield="true" />
-      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Created By (External Party)" name="createdbyexternalparty" type="entityreference" lookupType="externalparty" />
-      <field displayname="Created On" name="createdon" type="datetime" />
-      <field displayname="Currency" name="transactioncurrencyid" type="entityreference" lookupType="transactioncurrency" />
-      <field displayname="Current Cost" name="currentcost" type="money" />
-      <field displayname="Current Cost (Base)" name="currentcost_base" type="money" />
-      <field displayname="Decimals Supported" name="quantitydecimal" type="number" />
-      <field displayname="Default Price List" name="pricelevelid" type="entityreference" lookupType="pricelevel" />
+       <field displayname="Default Price List" name="pricelevelid" type="entityreference" lookupType="pricelevel" />
       <field displayname="Default Unit" name="defaultuomid" type="entityreference" lookupType="uom" />
       <field displayname="Default Vendor" name="msdyn_defaultvendor" type="entityreference" lookupType="account" customfield="true" />
       <field displayname="Description" name="description" type="string" />
@@ -24,10 +13,6 @@
       <field displayname="Is Kit" name="iskit" type="bool" />
       <field displayname="List Price" name="price" type="money" />
       <field displayname="List Price (Base)" name="price_base" type="money" />
-      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Modified By (External Party)" name="modifiedbyexternalparty" type="entityreference" lookupType="externalparty" />
-      <field displayname="Modified On" name="modifiedon" type="datetime" />
       <field displayname="Name" name="name" type="string" />
       <field displayname="Parent" name="parentproductid" type="entityreference" lookupType="product" />
       <field displayname="Process Id" name="processid" type="guid" />
