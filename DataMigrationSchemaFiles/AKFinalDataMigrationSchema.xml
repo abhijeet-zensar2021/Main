@@ -22,27 +22,11 @@
   </entity>
   <entity name="hsl_type" displayname="Type" etc="10297" primaryidfield="hsl_typeid" primarynamefield="hsl_name" disableplugins="false">
     <fields>
-      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Created On" name="createdon" type="datetime" />
-      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
-      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
-      <field displayname="Modified On" name="modifiedon" type="datetime" />
       <field displayname="Name" name="hsl_name" type="string" customfield="true" />
-      <field displayname="Owner" name="ownerid" type="owner" />
-      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
-      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
-      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
-      <field displayname="Purpose" name="hsl_purpose" type="optionsetvalue" customfield="true" />
-      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
-      <field displayname="Sort Order" name="hsl_sortorder" type="number" customfield="true" />
-      <field displayname="Status" name="statecode" type="state" />
-      <field displayname="Status Reason" name="statuscode" type="status" />
-      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
       <field displayname="Type" name="hsl_typeid" type="guid" primaryKey="true" />
-      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
-      <field displayname="Version Number" name="versionnumber" type="bigint" />
+      <field displayname="Purpose" name="hsl_purpose" type="optionsetvalue" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />      
     </fields>
     <relationships />
   </entity>
