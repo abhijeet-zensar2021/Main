@@ -1,0 +1,45 @@
+<entities >
+  <entity name="hsl_configsetting" displayname="Config Setting" etc="10260" primaryidfield="hsl_configsettingid" primarynamefield="hsl_name" disableplugins="false">
+    <fields>
+      <field displayname="Config Setting" name="hsl_configsettingid" type="guid" primaryKey="true" />
+      <field displayname="Name" name="hsl_name" type="string" customfield="true" />
+      <field displayname="Secure Value" name="hsl_securevalue" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="hsl_productcover" displayname="Product Cover" etc="10296" primaryidfield="hsl_productcoverid" primarynamefield="hsl_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="hsl_name" type="string" customfield="true" />
+      <field displayname="Cover Code" name="hsl_covercode" type="string" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Related Product" name="hsl_relatedproduct" type="entityreference" lookupType="product" customfield="true" />     
+      <field displayname="Product Cover" name="hsl_productcoverid" type="guid" primaryKey="true" />
+    </fields>
+    <relationships />
+  </entity>
+  <entity name="hsl_type" displayname="Type" etc="10297" primaryidfield="hsl_typeid" primarynamefield="hsl_name" disableplugins="false">
+    <fields>
+      <field displayname="Name" name="hsl_name" type="string" customfield="true" />
+      <field displayname="Type" name="hsl_typeid" type="guid" primaryKey="true" />
+      <field displayname="Purpose" name="hsl_purpose" type="optionsetvalue" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />      
+    </fields>
+    <relationships />
+  </entity>  
+  <entity name="team" displayname="Team" etc="9" primaryidfield="teamid" primarynamefield="name" disableplugins="false">
+    <fields>
+      <field displayname="Team Name" name="name" type="string" />
+      <field displayname="Team" name="teamid" type="guid" primaryKey="true" />
+      <field displayname="Description" name="description" type="string" />
+      <field displayname="Email" name="emailaddress" type="string" />
+      <field displayname="Is Default" name="isdefault" type="bool" />
+      <field displayname="Is System Managed" name="systemmanaged" type="bool" />
+      <field displayname="Team Type" name="teamtype" type="optionsetvalue" />      
+    </fields> 
+    <relationships />   
+  </entity>
+</entities>
