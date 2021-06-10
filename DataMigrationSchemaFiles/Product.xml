@@ -1,7 +1,6 @@
 <entities >
   <entity name="product" displayname="Product" etc="1024" primaryidfield="productid" primarynamefield="name" disableplugins="false">
     <fields>
-      <field displayname="Convert to Customer Asset" name="msdyn_converttocustomerasset" type="bool" customfield="true" />
       <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
       <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
       <field displayname="Created By (External Party)" name="createdbyexternalparty" type="entityreference" lookupType="externalparty" />
@@ -58,12 +57,5 @@
       <field displayname="Vendor" name="vendorname" type="string" />
       <field displayname="Vendor Name" name="vendorpartnumber" type="string" />
     </fields>
-    <relationships>
-      <relationship name="entitlementproducts" manyToMany="true" relatedEntityName="entitlementproducts" m2mTargetEntity="entitlement" m2mTargetEntityPrimaryKey="entitlementid" />
-      <relationship name="entitlementtemplateproducts" manyToMany="true" relatedEntityName="entitlementtemplateproducts" m2mTargetEntity="entitlementtemplate" m2mTargetEntityPrimaryKey="entitlementtemplateid" />
-      <relationship name="productsalesliterature" manyToMany="true" relatedEntityName="productsalesliterature" m2mTargetEntity="salesliterature" m2mTargetEntityPrimaryKey="salesliteratureid" />
-      <relationship name="msdyn_product_knowledgebaserecord" manyToMany="true" relatedEntityName="msdyn_product_knowledgebaserecord" m2mTargetEntity="knowledgebaserecord" m2mTargetEntityPrimaryKey="knowledgebaserecordid" />
-      <relationship name="msdyn_product_knowledgearticle" manyToMany="true" relatedEntityName="msdyn_product_knowledgearticle" m2mTargetEntity="knowledgearticle" m2mTargetEntityPrimaryKey="knowledgearticleid" />
-    </relationships>
-  </entity>
+    </entity>
 </entities>
