@@ -1,8 +1,6 @@
 <entities >
   <entity name="product" displayname="Product" etc="1024" primaryidfield="productid" primarynamefield="name" disableplugins="false">
     <fields>
-      <field displayname="(Deprecated) Stage Id" name="stageid" type="guid" />
-      <field displayname="(Deprecated) Traversed Path" name="traversedpath" type="string" />
       <field displayname="Convert to Customer Asset" name="msdyn_converttocustomerasset" type="bool" customfield="true" />
       <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
       <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
