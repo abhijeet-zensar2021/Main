@@ -20,7 +20,7 @@
     </fields>
     <relationships />
   </entity>
-   <entity name="hsl_type" displayname="Type" etc="10297" primaryidfield="hsl_typeid" primarynamefield="hsl_name" disableplugins="false">
+  <entity name="hsl_type" displayname="Type" etc="10297" primaryidfield="hsl_typeid" primarynamefield="hsl_name" disableplugins="false">
     <fields>
       <field displayname="Name" name="hsl_name" type="string" customfield="true" />
       <field displayname="Type" name="hsl_typeid" type="guid" primaryKey="true" />
