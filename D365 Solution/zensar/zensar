@@ -4,8 +4,11 @@ and will get expire on 10th July 2021.
 
 D365 Instances
 Dev - https://ztdev.crm11.dynamics.com/
+AuthType=ClientSecret;url=https://ztdev.crm11.dynamics.com/;ClientId=c2b575f9-ef65-490b-8741-800f067f2111;ClientSecret=22-OC1YovwX38F~13.K-I1gyusuh4_iUZo
 UAT - https://ztuat.crm11.dynamics.com/
+AuthType=ClientSecret;url=https://ztuat.crm11.dynamics.com/;ClientId=c2b575f9-ef65-490b-8741-800f067f2111;ClientSecret=22-OC1YovwX38F~13.K-I1gyusuh4_iUZo
 Prod - https://ztprod.crm11.dynamics.com/
+AuthType=ClientSecret;url=https://ztprod.crm11.dynamics.com/;ClientId=c2b575f9-ef65-490b-8741-800f067f2111;ClientSecret=22-OC1YovwX38F~13.K-I1gyusuh4_iUZo
 
 UserId 
 Harshal@ztd365.onmicrosoft.com 
@@ -17,3 +20,12 @@ Somyata@ztd365.onmicrosoft.com
 Deep@ztd365.onmicrosoft.com
 
 Pwd - Zensar@1234
+
+SecId -f35821da-ac4b-4c3f-a881-9baed3201081
+
+ClinetId(AppId) - c2b575f9-ef65-490b-8741-800f067f2111
+
+Value - 22-OC1YovwX38F~13.K-I1gyusuh4_iUZo
+
+
+
