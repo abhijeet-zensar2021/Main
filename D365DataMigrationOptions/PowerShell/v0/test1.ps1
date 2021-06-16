@@ -108,7 +108,7 @@ Write-Host "Export Params Log: $exportParams.LogWriteDirectory"
 
 #Export-CrmDataFile @exportParams -Verbose
 #Export-CrmDataFile @exportParams  -Verbose
-Export-CrmDataFile -CrmConnection $CRMConn -SchemaFile "$schemaFile" -DataFile "$dataFile"
+Export-CrmDataFile -CrmConnection $CRMConn -SchemaFile $schemaFile -DataFile $dataFile
 
 
 
