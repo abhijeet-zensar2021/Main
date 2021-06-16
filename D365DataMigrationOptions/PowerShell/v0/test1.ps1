@@ -23,10 +23,10 @@ param(
 [string]$logsDirectory = "CMTExport.log",
 
 #[string]$configurationMigrationModulePath, #The full path to the Configuration Migration PowerShell Module
-[string]$configurationMigrationModulePath = "D365DataMigrationOptions\PowerShell\v0\CMT",
+[string]$configurationMigrationModulePath = "\CMT",
 
 #[string]$toolingConnectorModulePath #The full path to the Tooling Connector PowerShell Module
-[string]$toolingConnectorModulePath = "D365DataMigrationOptions\PowerShell\v0\tool" 
+[string]$toolingConnectorModulePath = "\tool" 
 
 ) 
 
