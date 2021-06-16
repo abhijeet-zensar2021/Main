@@ -22,16 +22,20 @@ param(
 #[string]$logsDirectory, #Optional - will place the import log in here
 [string]$logsDirectory = "CMTExport.log",
 
-$scriptPath = split-path -parent $MyInvocation.MyCommand.Definition,
-Write-Host "Script Path1: $scriptPath",
-Write-Host "Script Path2: $scriptPath",
-Write-Verbose "Script Path3: $scriptPath",
+#$scriptPath = split-path -parent $MyInvocation.MyCommand.Definition,
+#Write-Host "Script Path1: $scriptPath",
+#Write-Host "Script Path2: $scriptPath",
+#Write-Verbose "Script Path3: $scriptPath",
 
 #[string]$configurationMigrationModulePath, #The full path to the Configuration Migration PowerShell Module
-[string]$configurationMigrationModulePath = $scriptPath + "\CMT",
+#[string]$configurationMigrationModulePath = $scriptPath + "\CMT",
+[string]$configurationMigrationModulePath = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v0\CMT",
+
+
 
 #[string]$toolingConnectorModulePath #The full path to the Tooling Connector PowerShell Module
-[string]$toolingConnectorModulePath = $scriptPath + "\tool" 
+#[string]$toolingConnectorModulePath = $scriptPath + "\tool" 
+[string]$toolingConnectorModulePath = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v0\tool" 
 
 ) 
 
