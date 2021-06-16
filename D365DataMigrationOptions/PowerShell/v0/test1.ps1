@@ -23,10 +23,10 @@ param(
 [string]$logsDirectory = "CMTExport.log",
 
 #[string]$configurationMigrationModulePath, #The full path to the Configuration Migration PowerShell Module
-[string]$configurationMigrationModulePath = "\CMT",
+[string]$configurationMigrationModulePath = ($MyInvocation.MyCommand.Path) + "\CMT"
 
 #[string]$toolingConnectorModulePath #The full path to the Tooling Connector PowerShell Module
-[string]$toolingConnectorModulePath = "\tool" 
+[string]$toolingConnectorModulePath = ($MyInvocation.MyCommand.Path) + "\tool" 
 
 ) 
 
