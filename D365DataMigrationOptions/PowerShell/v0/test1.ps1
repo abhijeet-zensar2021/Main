@@ -14,7 +14,7 @@ param(
 [int]$crmConnectionTimeout = 1,
 
 #[string]$dataFile, #The absolute path of data.xml to create/update
-#[string]$dataFile = "DevData.xml",
+#[string]$dataFile = "DevData",
 
 [system.string]$dataFile = "DevData.xml",
 
