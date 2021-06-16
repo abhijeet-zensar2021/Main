@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Xrm.Tooling.CrmConnector.PowerShell</id>
+    <version>3.3.0.928</version>
+    <authors>Microsoft Common Data Service Team</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://download.microsoft.com/download/E/1/8/E18C0FAD-FEC8-44CD-9A16-98EDC4DAC7A2/LicenseTerms.docx</licenseUrl>
+    <projectUrl>https://docs.microsoft.com/powershell/module/microsoft.xrm.tooling.crmconnector.powershell/?view=dynamics365ce-ps</projectUrl>
+    <iconUrl>https://connectoricons-prod.azureedge.net/powerappsforappmakers/icon_1.0.1056.1255.png</iconUrl>
+    <description>PowerShell wrapper for CDS CrmServiceClient</description>
+    <releaseNotes>Current Release:
+
+3.3.0.928
+Added new public property to Read out InMemory Logs in string list format or Tuple(datetime,logevent) format. 
+Added new public property for OrganizationDetail Information called "OrganizationDetail" for the currently connected environment.
+Added new enum for ImportSolution additional property options called "ImportSolutionProperties" - this contains valid options for additional properties for the ImportSolution handler
+Adding Switzerland Geo to Regions List.
+Fixed an issue with .Clone not correctly supporting adding telemetry handlers to cloned connections
+Fixed an issue with telemetry for the client that was using incorrect format for useragent content
+
+3.3.0.899:
+Added initial support for in memory log capture support. 
+          
+3.3.0.897:
+Fixed an issue with sovereign cloud discovery reference data that would prevent a login control from picking the correct global discovery server when connecting.
+        
+3.3.0.892:
+Fixed Authority property data loss post clone process
+Fixed an error with connection string based IFD Auth flows that slipped though testing.
+
+3.3.0.891:
+Fixed an error where discovery would be used when using AD and IFD to connect to onpremise even if connection strings where used. 
+
+3.3.0.890:
+Fixed an error where timeout property was not properly assigned when using Non-oAuth types 
+Fixed an error with setting CallerId when ClientSecret Auth type is used.  
+	Thanks for all the bug reports on this and repros that really helped us run it down. 
+
+3.3.0.887:
+Uptaking new CoreSDK release
+
+3.3.0.886:
+Uptaking current CDS SDK. 
+
+3.3.0.885:
+Internal fixes to unify the way in which online and onprem instances were determined from the URI provided.
+Added new Static Property on Utilities called IsValidOnlineHost, this takes a URL and determines if it a valid OnLine URI for the CDS Service
+Corrected an issue where the AdminAPI URL provided by Get-CrmOrganizations was incorrect.
+Fixed a bug Null Object Error that would occur occasionaly during connect when many concurrent connects were run.
+	This would typically happen if a developer used a Task.Wait behavior to create a stack of connections at once. 
+Fixed a bug that would prevent logs from being generated even when verbose tracing was enabled. 
+
+3.3.0.874:
+Added Support for new properties in discovery response. 
+Added: 
+	Tenant Id - ID of the tenant that the instance resides in
+	Enviroment Id - ID of the PowerPlatform Envrioment that the instance resides in
+	UrlName - Host name for the target instance. 
+Fixed a bug where the second ( or third ) connection string attempt in the same process would cause the client to try to reuse the current connection.
+Fixed a bug where the SDK Version Property was not properly returning from the CrmServiceClient
+
+3.3.0.869:
+	Fixed a bug with how errors are handled when they are raised from ADAL 3.19+.  MFA Force Login will now work properly again. 
+    Updated default response sizes to support more verbose error messages from CDS
+
+3.3.0.862
+	ADAL 3.19+ is now required for this library.  ADAL 2.x clients will need to be updated to use ADAL 3.x+
+	Added Support for Current User ID login when using Online flows with oAuth (Login control/connection string support )
+	Added Support for ClientID Secret Auth when using oAuth flows. (connection string support )
+
+3.3.0.857 
+Added support for France and New US Geos
+	Added new behavior to return the full login error when initial connect fails in LastException. 
+	Fixed https activation issue introduced by .net 4.8. - This should no longer require http activation to be enabled on windows. 
+	Fixed issue where a long running cloned connection loses its access token.
+
+3.3.0.841 - (Nuget-9.0.2.16):
+	Added native support for handing throttling messages from server. 
+	Fixed issue where a cloned connections token could time out in a way that was not detected. 
+			When failing, this would result in a mid operation Authentication failure reporting something like "Anonymous Access Failed"
+	Added Support for China Geo
+	Minor changes to logging of Import Solution Activities 
+
+	#### VERSION RESET HERE TO NOW FOLLOW BUILD VERSIONS OF THIS MODULE... 
+
+NOTE: Notes Below are synced to Nuget Release Found here: https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell/
+9.0.2.12
+	Fixed bug in CrmServiceClient which would cause some OnPrem connections to fail with an error "Item already added to List"
+	Minor Perf Improvements
+		
+9.0.2.11:
+	Updated to include Fixed version of CrmServiceClient and login control for new US Geo ( US Gov High )
+
+9.0.2.9: 
+	Picked up updated CrmServiceClient (Microsoft.Xrm.Tooling.Connector)
+
+9.0.2.8: 
+	Picked up updated CrmServiceClient (Microsoft.Xrm.Tooling.Connector)
+
+9.0.2.7: 
+	Picked up updated CrmServiceClient (Microsoft.Xrm.Tooling.Connector)
+
+9.0.2.5: 
+	Fixed a bug with using ExecuteCrmWebRequest where SkipDiscovery was also used that would cause the command to fail with a malformed URI error.
+	Fix to support SSO login, issue manifested as unable to execute a SSO login on second attempt.
+	Fix to make local metadata cache instance aware, 
+		Issue manifested in a single client process where more then one connection was made to different CDS instances and the metadata helpers were used.  The Metadata would not be instance specific.
+					
+	Streamlined .Clone support by removing unneeded WhoAmI validation call.
+	Added new .Clone override to allow a developer to pass an assembly reference to the .Clone method to use when establishing strong types for that connection.
+	Added additional error log details when a fault is detected
+			
+		
+9.0.2.4:
+	Added support for retrying SDK request if the server throws a retriable errors.
+	ImportSolutionToCrmAsync â€“ 
+		Returns an AsyncOperation ID that must be polled for solution Import completion or failure. 
+		Note, Async jobs are subject to Async queuing and overhead, thus use this with caution.
+	DeleteAndPromoteSolutionAsync â€“ 
+		Returns an AsyncOperation ID that must be polled for completion
+		Note: DeleteAndPromote Async support is not generally available to all regions and versions of the platform.  If this is not available the async job with fail immediately.
+		Note: Async jobs are subject to Async queuing and overhead, thus use this with caution.
+
+9.0.2.3: 
+	Added new dependencies: 
+		Json.net version 6.0.0.0
+		Microsoft.Rest.ClientRuntime 3.0.0.0
+	Added Support for Caller ID using AAD Object ID of caller -
+		Added new property on CrmServiceClient: CallerAADObjectId
+		Supported for 8.1 and later.
+	Added New Method ExecuteCrmWebRequest
+		This method supports using the XRM WebAPI directly from the CRMServiceClient.
+		Supports only oAuth and Certificate Auth connection types
+		Supported for 8.0 and later. 
+		Supports Common request types and supports batch execute.
+	Added Global Discovery Support for Instance lookup 
+		Global discovery is now used for all lookup, both regional and global (Online Region = Dont Know) when OAuth is used, except where special region rules are required.
+		Note: Germany and North America 2 are not scanned when Online Region = Dont Know is selected.
+	Added SkipDiscovery to all connection string variants.
+	Added Certificate support for constructor variants. 
+	Fixed issue with allowing discovery selection using onPrem and OAuth.
+	Fixed an issue with older On-Prem ADFS instances that do not require a resource URI.
+
+	**Special notes: 
+		Added additional telemetry support to connection requests
+			This will add the process name of the calling process (if available) to help with troubleshooting and support requests.
+		Added request IDs to all requests to help with troubleshooting and support requests.
+			These will appear only when verbose logging is enabled. 
+                
+9.0.0.5: 9.0 Initial Release
+9.0.0.3-preview: 
+	Initial release.
+	To register module, run the RegisterXrmTooling.ps1</releaseNotes>
+    <copyright>Â© 2020 Microsoft Corporation. All rights reserved</copyright>
+    <tags>PSModule PSIncludes_Cmdlet PSCmdlet_Get-CrmConnection PSCmdlet_Get-CrmOrganizations PSCommand_Get-CrmConnection PSCommand_Get-CrmOrganizations</tags>
+  </metadata>
+</package>
