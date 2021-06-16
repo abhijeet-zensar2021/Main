@@ -1,0 +1,1 @@
+﻿Get-CrmConnection -OrganizationName Development -OnLineType Office365 -Credential $cred
