@@ -106,7 +106,9 @@ If ($logsDirectory)
 }
 Write-Host "Export Params Log: $exportParams.LogWriteDirectory"
 
-Export-CrmDataFile @exportParams -Verbose
+#Export-CrmDataFile @exportParams -Verbose
+Export-CrmDataFile @exportParams -EmitLogToConsole -Verbose
+
 
 Write-Verbose 'Leaving ExporCMtData.ps1'
 Write-Host 'Leaving ExporCMtData.ps1'
