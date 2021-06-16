@@ -14,7 +14,9 @@ param(
 [int]$crmConnectionTimeout = 1,
 
 #[string]$dataFile, #The absolute path of data.xml to create/update
-[string]$dataFile = "DevData.xml",
+#[string]$dataFile = "DevData.xml",
+
+[system.string]$dataFile = "DevData.xml",
 
 #[string]$schemaFile, #The absolute path to the schema file
 [string]$schemaFile = "AllEntitiesSchema.xml",
