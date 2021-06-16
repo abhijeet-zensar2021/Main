@@ -22,6 +22,11 @@ param(
 #[string]$logsDirectory, #Optional - will place the import log in here
 [string]$logsDirectory = "CMTExport.log",
 
+$scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
+Write-Host "Script Path1: $scriptPath"
+Write-Host "Script Path2: $scriptPath"
+Write-Verbose "Script Path3: $scriptPath"
+
 #[string]$configurationMigrationModulePath, #The full path to the Configuration Migration PowerShell Module
 [string]$configurationMigrationModulePath = $MyInvocation.MyCommand.Path + "\CMT"
 
