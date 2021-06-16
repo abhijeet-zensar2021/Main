@@ -28,10 +28,10 @@ Write-Host "Script Path2: $scriptPath"
 Write-Verbose "Script Path3: $scriptPath"
 
 #[string]$configurationMigrationModulePath, #The full path to the Configuration Migration PowerShell Module
-[string]$configurationMigrationModulePath = $MyInvocation.MyCommand.Path + "\CMT"
+[string]$configurationMigrationModulePath = $scriptPath + "\CMT"
 
 #[string]$toolingConnectorModulePath #The full path to the Tooling Connector PowerShell Module
-[string]$toolingConnectorModulePath = $MyInvocation.MyCommand.Path + "\tool" 
+[string]$toolingConnectorModulePath = $scriptPath + "\tool" 
 
 ) 
 
