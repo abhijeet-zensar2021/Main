@@ -6,7 +6,7 @@
 
 param(
 #[string]$crmConnectionString, #The target CRM organization connection string
-[string]$CrmConnectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Elijah@ztd365.onmicrosoft.com;Password=Zensar@1234",
+[string]$CrmConnectionString = "AuthType=Office365;url=https://ztuat.crm11.dynamics.com/;UserName=Elijah@ztd365.onmicrosoft.com;Password=Zensar@1234",
 
 [int]$crmConnectionTimeout = 10, #CRM Connection Timeout in minutes
 
