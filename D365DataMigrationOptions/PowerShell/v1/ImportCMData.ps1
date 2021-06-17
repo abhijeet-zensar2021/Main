@@ -11,7 +11,7 @@ param(
 [int]$crmConnectionTimeout = 10, #CRM Connection Timeout in minutes
 
 #[string]$dataFile, #The absolute path of data zip to import
-[string]$dataFile = "Data.zip",
+[string]$dataFile = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\dmfile\Data.zip",
 
 #[string]$logsDirectory, #Optional - will place the import log in here
 [string]$logsDirectory = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\logs",
