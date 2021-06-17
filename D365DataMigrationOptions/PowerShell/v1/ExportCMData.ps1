@@ -14,7 +14,7 @@ param(
 [int]$crmConnectionTimeout = 10,
 
 #[string]$dataFile, #The absolute path of data.xml to create/update
-[string]$dataFile = "Data.zip",
+[string]$dataFile = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\dmfile\Data.zip",
 
 #[string]$schemaFile, #The absolute path to the schema file
 [string]$schemaFile = "Schema.xml",
