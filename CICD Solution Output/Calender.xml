@@ -1,0 +1,8 @@
+<entity name="calendar" displayname="Calendar" etc="4003" primaryidfield="calendarid" primarynamefield="name" disableplugins="false">
+<fields>
+<field displayname="Calendar" name="calendarid" type="guid" primaryKey="true" />
+<field displayname="Calendar Type" name="type" type="optionsetvalue" />
+<field displayname="Holiday Schedule CalendarId" name="holidayschedulecalendarid" type="entityreference" lookupType="holidayschedulecalendar" />
+<field displayname="Name" name="name" type="string" />
+</fields>
+</entity>
