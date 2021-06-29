@@ -3,8 +3,8 @@
 #
 
 param(
-[string]$CrmConnectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Elijah@ztd365.onmicrosoft.com;Password=Zensar@1234",
-[string]$SolutionName = "SampleApplication",
+[string]$CrmConnectionString,
+[string]$SolutionName,
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
