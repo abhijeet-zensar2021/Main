@@ -8,7 +8,7 @@ param(
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
-[string]$ExportSolutionOutputPath,
+[string]$ExportSolutionOutputPath = "C:\Users\ST47660\Downloads\Solutions.zip",
 [bool]$UpdateVersion,
 [string]$RequiredVersion,
 [int]$Timeout,
