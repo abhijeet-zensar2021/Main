@@ -99,4 +99,4 @@ if ($ExportManaged)
     Write-Host "Managed Solution Exported $ExportSolutionOutputPath\$exportmanagedFile"
 }
 
-Write-Verbose 'Leaving ExportUnManagedSolution_Test.ps1'
+Write-Verbose 'Leaving ExportSolution.ps1'
