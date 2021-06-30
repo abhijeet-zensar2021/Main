@@ -4,7 +4,7 @@
 
 param(
 [string]$CrmConnectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Shalini@ztd365.onmicrosoft.com;Password=Zensar@1234",
-[string]$SolutionName = $SolutionName,
+[string]$SolutionName = Read-Host "Please enter solution name"
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
