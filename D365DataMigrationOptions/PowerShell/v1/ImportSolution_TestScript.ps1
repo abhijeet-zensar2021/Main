@@ -5,8 +5,7 @@
 
 param(
 [string]$solutionFile, #The absolute path to the solution file zip to be imported
-[string]$crmConnectionString = "AuthType=Office365;url=https://ztuat.crm11.dynamics.com/;UserName=Somyata@ztd365.onmicrosoft.com;Password=Zensar@1234",
-, #The target CRM organization connection string
+[string]$crmConnectionString = "AuthType=Office365;url=https://ztuat.crm11.dynamics.com/;UserName=Somyata@ztd365.onmicrosoft.com;Password=Zensar@1234", #The target CRM organization connection string
 [bool]$override, #If set to 1 will override the solution even if a solution with same version exists
 [bool]$publishWorkflows, #Will publish workflows during import
 [bool]$overwriteUnmanagedCustomizations, #Will overwrite unmanaged customizations
