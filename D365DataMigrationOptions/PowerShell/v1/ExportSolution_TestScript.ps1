@@ -8,7 +8,7 @@ param(
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
-[string]$ExportSolutionOutputPath = "D:\a\1\s\DataMigrationZipFiles\",
+[string]$ExportSolutionOutputPath = $(Build.ArtifactStagingDirectory),
 [bool]$UpdateVersion,
 [string]$RequiredVersion,
 [int]$Timeout,
