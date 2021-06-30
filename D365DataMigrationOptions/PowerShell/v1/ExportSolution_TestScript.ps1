@@ -10,7 +10,7 @@ param(
 [string]$TargetVersion,
 [string]$ExportSolutionOutputPath,
 [bool]$UpdateVersion,
-[string]$RequiredVersion, = "D:\PowerShell_PackagedCRMSolution"
+[string]$RequiredVersion, = "D:\PowerShell_PackagedCRMSolution",
 [int]$Timeout,
 [bool]$ExportIncludeVersionInSolutionName,
 [bool]$ExportAutoNumberingSettings,
