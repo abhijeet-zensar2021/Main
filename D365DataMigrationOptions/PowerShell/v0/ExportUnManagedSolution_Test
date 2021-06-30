@@ -4,11 +4,11 @@
 
 param(
 [string]$CrmConnectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Shalini@ztd365.onmicrosoft.com;Password=Zensar@1234",
-[string]$SolutionName = $env:SolutionName,
+[string]$SolutionName = "SampleApplication",
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
-[string]$ExportSolutionOutputPath = "C:\Users\sp93210\",
+[string]$ExportSolutionOutputPath = "D:\a\1\s\DataMigrationZipFiles",
 [bool]$UpdateVersion,
 [string]$RequiredVersion,
 [int]$Timeout,
