@@ -8,7 +8,7 @@ param(
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
-[string]$ExportSolutionOutputPath = "D:\PowerShell_PackagedCRMSolution",
+[string]$ExportSolutionOutputPath = "/DataMigrationZipFiles",
 [bool]$UpdateVersion,
 [string]$RequiredVersion,
 [int]$Timeout,
