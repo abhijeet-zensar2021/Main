@@ -3,14 +3,14 @@
 #
 
 param(
-[string]$CrmConnectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Elijah@ztd365.onmicrosoft.com;Password=Zensar@1234",
-[string]$SolutionName = "Sample Application",
+[string]$CrmConnectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Somyata@ztd365.onmicrosoft.com;Password=Zensar@1234",
+[string]$SolutionName = "SampleApplication",
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
 [string]$ExportSolutionOutputPath,
 [bool]$UpdateVersion,
-[string]$RequiredVersion,
+[string]$RequiredVersion, = "D:\PowerShell_PackagedCRMSolution"
 [int]$Timeout,
 [bool]$ExportIncludeVersionInSolutionName,
 [bool]$ExportAutoNumberingSettings,
