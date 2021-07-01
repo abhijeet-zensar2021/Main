@@ -6,7 +6,7 @@ param([string]$UnpackedFilesFolder = "D:\a\1\s\DataMigrationZipFiles\SampleAppli
 [string]$PackageType = "Unmanaged", #Managed/Unmanaged/Both
 [string]$solutionName = "Sample Application", #The unique CRM solution name
 [string]$connectionString, #The connection string as per CRM Sdk
-[string]$solutionFile = "D:\a\1\s\DataMigrationZipFiles\SampleApplication.zip", #The path to the solution file to be extracted. If supplied export is skipped
+[string]$solutionFile, #The path to the solution file to be extracted. If supplied export is skipped
 [string]$CoreToolsPath, #The full path to the Coretools folder containg solutionpackager.exe
 [string]$sourceLoc,
 [bool]$localize,
