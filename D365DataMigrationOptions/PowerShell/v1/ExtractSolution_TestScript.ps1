@@ -5,7 +5,7 @@ param([string]$UnpackedFilesFolder = "D:\a\1\s\DataMigrationZipFiles\SampleAppli
 [string]$mappingFile, #The full path to the mapping file
 [string]$PackageType = "Unmanaged", #Managed/Unmanaged/Both
 [string]$solutionName = "SampleApplication", #The unique CRM solution name
-[string]$connectionString, #The connection string as per CRM Sdk
+[string]$connectionString = "AuthType=Office365;url=https://ztdev.crm11.dynamics.com/;UserName=Somyata@ztd365.onmicrosoft.com;Password=Zensar@1234", #The connection string as per CRM Sdk
 [string]$solutionFile, #The path to the solution file to be extracted. If supplied export is skipped
 [string]$CoreToolsPath, #The full path to the Coretools folder containg solutionpackager.exe
 [string]$sourceLoc,
