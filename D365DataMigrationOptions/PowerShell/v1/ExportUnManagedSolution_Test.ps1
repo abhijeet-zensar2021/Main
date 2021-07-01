@@ -8,7 +8,7 @@ param(
 [bool]$ExportManaged,
 [bool]$ExportUnmanaged = $true,
 [string]$TargetVersion,
-[string]$ExportSolutionOutputPath = "DataMigrationSolutionFiles\",
+[string]$ExportSolutionOutputPath = "D:\a\1\s\DataMigrationSolutionFiles",
 [bool]$UpdateVersion,
 [string]$RequiredVersion,
 [int]$Timeout,
