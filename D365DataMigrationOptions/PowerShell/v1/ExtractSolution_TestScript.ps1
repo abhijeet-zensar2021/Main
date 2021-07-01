@@ -1,7 +1,7 @@
 ﻿#
 # Filename: ExtractSolution.ps1
 #
-param([string]$UnpackedFilesFolder = "/CICD Solution Output", #The folder to extract the CRM solution
+param([string]$UnpackedFilesFolder = "D:\a\1\s\CICD Solution Output", #The folder to extract the CRM solution
 [string]$mappingFile, #The full path to the mapping file
 [string]$PackageType = "Unmanaged", #Managed/Unmanaged/Both
 [string]$solutionName = "Sample Application", #The unique CRM solution name
