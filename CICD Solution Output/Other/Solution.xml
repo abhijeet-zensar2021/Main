@@ -294,11 +294,11 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="msa_managingpartnerid" displayName="Managing Partner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
-        <Dependent type="10" schemaName="msdyn_account_account_BillingAccount" displayName="msdyn_account_account_BillingAccount" parentSchemaName="account" parentDisplayName="Account" />
+        <Dependent type="10" schemaName="msa_account_managingpartner" displayName="msa_account_managingpartner" parentSchemaName="account" parentDisplayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="msdyn_billingaccount" displayName="Billing Account" parentSchemaName="account" parentDisplayName="Account" solution="FieldServiceCommon (1.0.0.134)" />
-        <Dependent type="10" schemaName="msdyn_account_account_BillingAccount" displayName="msdyn_account_account_BillingAccount" parentSchemaName="account" parentDisplayName="Account" />
+        <Dependent type="10" schemaName="msa_account_managingpartner" displayName="msa_account_managingpartner" parentSchemaName="account" parentDisplayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="msdyn_preferredresource" displayName="Preferred Resource (Deprecated)" parentSchemaName="account" parentDisplayName="Account" solution="FieldService (8.8.0.88)" />
