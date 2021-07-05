@@ -2,7 +2,10 @@
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <EntityRelationship Name="adx_webrole_account" />
   <EntityRelationship Name="adx_website_sponsor" />
+  <EntityRelationship Name="business_unit_hsl_configsetting" />
   <EntityRelationship Name="business_unit_hsl_type" />
+  <EntityRelationship Name="lk_hsl_configsetting_createdby" />
+  <EntityRelationship Name="lk_hsl_configsetting_modifiedby" />
   <EntityRelationship Name="lk_hsl_type_createdby" />
   <EntityRelationship Name="lk_hsl_type_modifiedby" />
   <EntityRelationship Name="msa_account_managingpartner" />
@@ -12,7 +15,10 @@
   <EntityRelationship Name="msdyn_msdyn_taxcode_account_SalesTaxCode" />
   <EntityRelationship Name="msdyn_msdyn_workhourtemplate_account_workhourtemplate" />
   <EntityRelationship Name="msdyn_territory_account_ServiceTerritory" />
+  <EntityRelationship Name="owner_hsl_configsetting" />
   <EntityRelationship Name="owner_hsl_type" />
+  <EntityRelationship Name="team_hsl_configsetting" />
   <EntityRelationship Name="team_hsl_type" />
+  <EntityRelationship Name="user_hsl_configsetting" />
   <EntityRelationship Name="user_hsl_type" />
 </EntityRelationships>

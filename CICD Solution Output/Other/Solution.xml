@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="0" />
+      <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
       <RootComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
     </RootComponents>
@@ -405,7 +406,7 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
