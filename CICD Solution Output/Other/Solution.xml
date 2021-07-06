@@ -79,17 +79,28 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="0" />
+      <RootComponent type="1" schemaName="activitypointer" behavior="2" />
       <RootComponent type="1" schemaName="category" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
       <RootComponent type="1" schemaName="lead" behavior="0" />
+      <RootComponent type="1" schemaName="subject" behavior="0" />
       <RootComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
       <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      <RootComponent type="60" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
         <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webfile" displayName="Web File" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="1" schemaName="subject" displayName="Subject" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="1" schemaName="subject" displayName="Subject" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
@@ -302,6 +313,10 @@
       <MissingDependency>
         <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_knowledgearticletemplate" displayName="Knowledge Article Template" solution="msdynce_KnowledgeManagementFeatures (9.0.1.5944)" />
+        <Dependent type="1" schemaName="subject" displayName="Subject" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.383)" />
