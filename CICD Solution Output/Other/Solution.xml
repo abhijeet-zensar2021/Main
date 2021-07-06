@@ -79,28 +79,76 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="0" />
-      <RootComponent type="1" schemaName="activitypointer" behavior="2" />
       <RootComponent type="1" schemaName="category" behavior="0" />
+      <RootComponent type="1" schemaName="contact" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
       <RootComponent type="1" schemaName="lead" behavior="0" />
       <RootComponent type="1" schemaName="subject" behavior="0" />
       <RootComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+      <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
-      <RootComponent type="60" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
+        <Required type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagealert" displayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagenotification" displayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_portallanguage" displayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webfile" displayName="Web File" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
         <Dependent type="1" schemaName="subject" displayName="Subject" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="adx_webfilelog" displayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
         <Dependent type="1" schemaName="subject" displayName="Subject" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagehistory" displayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagelog" displayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
@@ -109,6 +157,14 @@
       <MissingDependency>
         <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
@@ -279,8 +335,16 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_agreement" displayName="Agreement" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" solution="msdyn_AssetCommon (1.0.7.102)" />
@@ -295,8 +359,16 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_geofence" displayName="Geofence" solution="msdyn_Geofencing (1.1.0.100)" />
@@ -307,12 +379,20 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_iotdevice" displayName="IoT Device" solution="IoTConnector (1.8.18.0)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_knowledgearticletemplate" displayName="Knowledge Article Template" solution="msdynce_KnowledgeManagementFeatures (9.0.1.5944)" />
@@ -323,16 +403,32 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_payment" displayName="Payment" solution="FieldService (8.8.0.88)" />
@@ -351,6 +447,10 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_requirementresourcepreference" displayName="Requirement Resource Preference" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
@@ -359,12 +459,20 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_rmaproduct" displayName="RMA Product" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_taxcode" displayName="Tax Code" solution="FieldServiceCommon (1.0.0.134)" />
@@ -379,6 +487,10 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_workorderresourcerestriction" displayName="Resource Restriction (Deprecated)" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
@@ -389,6 +501,10 @@
       <MissingDependency>
         <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" />
@@ -423,12 +539,28 @@
         <Dependent type="2" schemaName="msa_managingpartneridyominame" parentSchemaName="account" parentDisplayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="10" schemaName="msa_contact_managingpartner" displayName="msa_contact_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="msa_managingpartneridname" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_managingpartner" displayName="msa_contact_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="msa_managingpartneridyominame" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="10" schemaName="msdyn_account_account_BillingAccount" displayName="msdyn_account_account_BillingAccount" parentSchemaName="account" parentDisplayName="Account" solution="FieldServiceCommon (1.0.0.134)" />
         <Dependent type="2" schemaName="msdyn_billingaccountname" parentSchemaName="account" parentDisplayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msdyn_account_account_BillingAccount" displayName="msdyn_account_account_BillingAccount" parentSchemaName="account" parentDisplayName="Account" solution="FieldServiceCommon (1.0.0.134)" />
         <Dependent type="2" schemaName="msdyn_billingaccountyominame" parentSchemaName="account" parentDisplayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_preferredlanguageidname" parentSchemaName="contact" parentDisplayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="FieldService (8.8.0.88)" />
@@ -503,12 +635,48 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="2" schemaName="adx_name" displayName="Name" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_portallanguageid" displayName="Portal Language" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="2" schemaName="bookableresourceid" displayName="Bookable Resource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
         <Dependent type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="name" displayName="Name" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
         <Dependent type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_preferredlanguageid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="defaultpricelevelid" displayName="Price List" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_managingpartnerid" displayName="Managing Partner" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="parentcustomerid" displayName="Company Name" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="preferredequipmentid" displayName="Preferred Facility/Equipment" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="preferredserviceid" displayName="Preferred Service" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="address1_city" displayName="City" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
@@ -760,11 +928,23 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="20" displayName="CSR Manager" solution="msdynce_Service (9.0.5.56)" id="{16603b19-7e23-49af-87c7-bf43714172bd}" parentId="{1808b939-dd07-4ca7-aa99-ddd2734378f1}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="CSR Manager" solution="msdynce_Service (9.0.5.56)" id="{16603b19-7e23-49af-87c7-bf43714172bd}" parentId="{1808b939-dd07-4ca7-aa99-ddd2734378f1}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="20" displayName="Customer service app access" solution="msdynce_Customerservicehub (9.0.5.0056)" id="{3dac4d9e-568c-e611-80d4-00155d42a122}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Customer service app access" solution="msdynce_Customerservicehub (9.0.5.0056)" id="{3dac4d9e-568c-e611-80d4-00155d42a122}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Customer Service Representative" solution="msdynce_Service (9.0.5.56)" id="{c66db946-a3f9-4b60-9653-deb2b2dd3320}" parentId="{ecfd0b44-5720-45e3-ae68-417ddb0fb654}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="20" displayName="Customer Service Representative" solution="msdynce_Service (9.0.5.56)" id="{c66db946-a3f9-4b60-9653-deb2b2dd3320}" parentId="{ecfd0b44-5720-45e3-ae68-417ddb0fb654}" />
@@ -784,11 +964,23 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="Active Cases" displayName="Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001032}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+        <Dependent type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Services" displayName="Active Services" parentSchemaName="service" parentDisplayName="Service" solution="msdynce_Service (9.0.5.56)" id="{2bd4de5e-a7b4-4f5d-8fde-eb3b62d8e2b2}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="All Leads" displayName="All Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{5a926b99-3a5f-df11-ae90-00155d2e3002}" />
@@ -797,6 +989,10 @@
       <MissingDependency>
         <Required type="26" schemaName="All Accounts" displayName="All Accounts" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
         <Dependent type="60" displayName="Accounts Dashboard" parentDisplayName="Account" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active Cases by Agent" displayName="Active Cases by Agent" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{4143b74e-4a07-4d01-9ffe-2cdcaa4208fd}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="59" schemaName="Active Cases by Agent" displayName="Active Cases by Agent" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{4143b74e-4a07-4d01-9ffe-2cdcaa4208fd}" />
@@ -823,6 +1019,18 @@
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+        <Dependent type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="60" displayName="Information" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
         <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
       </MissingDependency>
@@ -835,6 +1043,10 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" solution="msdynce_ServicePatch201911 (9.0.21062.1009)" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="60" displayName="Account for Multisession experience" parentDisplayName="Account" solution="msdynce_ServicePatch201911 (9.0.21062.1009)" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
@@ -843,12 +1055,24 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
@@ -856,11 +1080,19 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
