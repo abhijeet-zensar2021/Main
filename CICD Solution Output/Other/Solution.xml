@@ -79,36 +79,328 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="0" />
-      <RootComponent type="1" schemaName="activitypointer" behavior="2" />
       <RootComponent type="1" schemaName="category" behavior="0" />
+      <RootComponent type="1" schemaName="contact" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
+      <RootComponent type="1" schemaName="incident" behavior="0" />
       <RootComponent type="1" schemaName="lead" behavior="0" />
+      <RootComponent type="1" schemaName="opportunity" behavior="0" />
       <RootComponent type="1" schemaName="subject" behavior="0" />
       <RootComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
+      <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
-      <RootComponent type="60" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
+      <RootComponent type="60" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      <RootComponent type="60" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
+        <Required type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagealert" displayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagenotification" displayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_portallanguage" displayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webfile" displayName="Web File" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
         <Dependent type="1" schemaName="subject" displayName="Subject" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="adx_webfilelog" displayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
         <Dependent type="1" schemaName="subject" displayName="Subject" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagehistory" displayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagelog" displayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="bookableresource" displayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
         <Dependent type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent type="1" schemaName="account" displayName="Account" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="accountidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="accountidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="contactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="contactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="contractdetailidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="contractidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="createdbyexternalpartyname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="createdbyexternalpartyyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="createdbyname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="createdbyyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="createdonbehalfbyname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="createdonbehalfbyyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customeridname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customeridtype" displayName="Customer Type" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customeridyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="entitlementidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="entityimage" displayName="Entity Image" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="firstresponsebykpiidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="int_customereffortname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="int_upsellreferralname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="kbarticleidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="masteridname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="modifiedbyexternalpartyname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="modifiedbyexternalpartyyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="modifiedbyname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="modifiedbyyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="modifiedonbehalfbyname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="modifiedonbehalfbyyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msa_partnercontactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msa_partnercontactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msa_partneridname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msa_partneridyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msdyn_functionallocationname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msdyn_incidenttypename" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msdyn_iotalertname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="owneriddsc" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="owneridname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="owneridtype" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="owneridyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="parentcaseidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="primarycontactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="primarycontactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="productidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="resolvebykpiidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="responsiblecontactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="responsiblecontactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="slainvokedidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="slaname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="socialprofileidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="subjectidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="transactioncurrencyidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
@@ -279,8 +571,40 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_agreement" displayName="Agreement" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_477c16f59170487b8b4dc895c5dcd09b" displayName="CFS - IoT Alert Process Flow" solution="ConnectedFieldService (1.8.18.0)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_bpf_989e9b1857e24af18787d5143b67523b" displayName="Case to Work Order Business Process" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_caseenrichment" displayName="Case Enrichment" solution="msdyn_CSIntelligence (1.0.0.102)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_casesuggestion" displayName="Case Suggestion" solution="msdyn_CSIntelligence (1.0.0.102)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_casesuggestionrequestpayload" displayName="Case Suggestion Request Payload" solution="msdyn_CSIntelligence (1.0.0.102)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_casetopic_incident" displayName="Case topic Incident mapping" solution="msdyn_AnalyticsForCS (1.0.21116.5)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_customerasset" displayName="Customer Asset" solution="msdyn_AssetCommon (1.0.7.102)" />
@@ -295,24 +619,60 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_functionallocation" displayName="Functional Location" solution="msdyn_AssetCommon (1.0.7.102)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_geofence" displayName="Geofence" solution="msdyn_Geofencing (1.1.0.100)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_incidenttype" displayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotalert" displayName="IoT Alert" solution="IoTConnector (1.8.18.0)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_iotalert" displayName="IoT Alert" solution="IoTConnector (1.8.18.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_iotdevice" displayName="IoT Device" solution="IoTConnector (1.8.18.0)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_iottocaseprocess" displayName="IoT Alert to Case Process" solution="msdyn_ConnectedCustomerService (9.0.20115.1014)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_knowledgearticletemplate" displayName="Knowledge Article Template" solution="msdynce_KnowledgeManagementFeatures (9.0.1.5944)" />
@@ -323,16 +683,44 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitypricelist" displayName="Opportunity Project Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="opportunity" displayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_organizationalunit" displayName="Organizational Unit" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_payment" displayName="Payment" solution="FieldService (8.8.0.88)" />
@@ -351,6 +739,10 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_requirementresourcepreference" displayName="Requirement Resource Preference" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
@@ -359,12 +751,28 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_rmaproduct" displayName="RMA Product" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_suggestioninteraction" displayName="Suggestion Interaction" solution="msdyn_CSIntelligence (1.0.0.102)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_suggestionrequestpayload" displayName="Suggestion request payload" solution="msdyn_CSIntelligence (1.0.0.102)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_taxcode" displayName="Tax Code" solution="FieldServiceCommon (1.0.0.134)" />
@@ -379,8 +787,24 @@
         <Dependent type="1" schemaName="account" displayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="contact" displayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="1" schemaName="opportunity" displayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="1" schemaName="msdyn_workorderresourcerestriction" displayName="Resource Restriction (Deprecated)" solution="FieldService (8.8.0.88)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workordertype" displayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="new_store" displayName="Store" solution="Active" />
@@ -388,11 +812,207 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent type="1" schemaName="account" displayName="Account" />
+        <Dependent type="1" schemaName="opportunity" displayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="10" schemaName="msdyn_accountmanager_opportunity" displayName="msdyn_accountmanager_opportunity" parentSchemaName="systemuser" parentDisplayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="accountidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="accountidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="campaignidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="contactidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="contactidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="createdbyname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="createdbyyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="createdonbehalfbyname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="createdonbehalfbyyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customeridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customeridtype" displayName="Potential Customer Type" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customeridyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="exchangerate" displayName="Exchange Rate" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="modifiedbyname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="modifiedbyyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="modifiedonbehalfbyname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="modifiedonbehalfbyyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msa_partneridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msa_partneridyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msa_partneroppidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msa_partneroppidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msdyn_accountmanageridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msdyn_accountmanageridyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msdyn_contractorganizationalunitidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msdyn_forecastcategoryname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msdyn_ordertypename" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msdyn_workordertypename" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="originatingleadidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="originatingleadidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="owneriddsc" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="owneridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="owneridtype" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="owneridyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="parentaccountidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="parentaccountidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="parentcontactidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="parentcontactidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="pricelevelidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="slainvokedidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="slaname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="transactioncurrencyidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunityproduct" displayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
@@ -401,6 +1021,14 @@
       <MissingDependency>
         <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
         <Dependent type="1" schemaName="account" displayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="quotedetail" displayName="Quote Line" solution="msdynce_Sales (9.0.4.0076)" />
@@ -415,12 +1043,44 @@
         <Dependent type="10" schemaName="msdyn_territory_account_ServiceTerritory" displayName="msdyn_territory_account_ServiceTerritory" parentSchemaName="territory" parentDisplayName="Territory" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="10" schemaName="msa_account_incident" displayName="msa_account_incident" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_account_incident" displayName="msa_account_incident" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneridname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_account_incident" displayName="msa_account_incident" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneridyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="10" schemaName="msa_account_managingpartner" displayName="msa_account_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
         <Dependent type="2" schemaName="msa_managingpartneridname" parentSchemaName="account" parentDisplayName="Account" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msa_account_managingpartner" displayName="msa_account_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
         <Dependent type="2" schemaName="msa_managingpartneridyominame" parentSchemaName="account" parentDisplayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_managingpartner" displayName="msa_contact_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="msa_managingpartneridname" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_managingpartner" displayName="msa_contact_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="msa_managingpartneridyominame" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_partner_opportunity" displayName="msa_partner_opportunity" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_partner_opportunity" displayName="msa_partner_opportunity" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_partner_opportunity" displayName="msa_partner_opportunity" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneridyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msdyn_account_account_BillingAccount" displayName="msdyn_account_account_BillingAccount" parentSchemaName="account" parentDisplayName="Account" solution="FieldServiceCommon (1.0.0.134)" />
@@ -431,12 +1091,76 @@
         <Dependent type="2" schemaName="msdyn_billingaccountyominame" parentSchemaName="account" parentDisplayName="Account" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_preferredlanguageidname" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="FieldService (8.8.0.88)" />
         <Dependent type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="FieldService (8.8.0.88)" />
         <Dependent type="2" schemaName="msdyn_preferredresourcename" parentSchemaName="account" parentDisplayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partnercontactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partnercontactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneroppidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneroppidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" solution="msdyn_ConnectedCustomerService (9.0.20115.1014)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" solution="msdyn_ConnectedCustomerService (9.0.20115.1014)" />
+        <Dependent type="2" schemaName="msdyn_iotalertname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_FieldService_patch_update (8.8.43.77)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_FieldService_patch_update (8.8.43.77)" />
+        <Dependent type="2" schemaName="msdyn_functionallocationname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_incidenttypename" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contractorganizationalunitidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msdyn_msdyn_taxcode_account_SalesTaxCode" displayName="msdyn_msdyn_taxcode_account_SalesTaxCode" parentSchemaName="msdyn_taxcode" parentDisplayName="Tax Code" solution="FieldService (8.8.0.88)" />
@@ -453,6 +1177,34 @@
       <MissingDependency>
         <Required type="10" schemaName="msdyn_msdyn_workhourtemplate_account_workhourtemplate" displayName="msdyn_msdyn_workhourtemplate_account_workhourtemplate" parentSchemaName="msdyn_workhourtemplate" parentDisplayName="Work template" solution="FieldService (8.8.0.88)" />
         <Dependent type="2" schemaName="msdyn_workhourtemplatename" parentSchemaName="account" parentDisplayName="Account" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_workordertypename" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_opportunity_msdyn_workorder" displayName="msdyn_opportunity_msdyn_workorder" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_accountmanager_opportunity" displayName="msdyn_accountmanager_opportunity" parentSchemaName="systemuser" parentDisplayName="User" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_accountmanager_opportunity" displayName="msdyn_accountmanager_opportunity" parentSchemaName="systemuser" parentDisplayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_accountmanager_opportunity" displayName="msdyn_accountmanager_opportunity" parentSchemaName="systemuser" parentDisplayName="User" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_accountmanageridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_accountmanager_opportunity" displayName="msdyn_accountmanager_opportunity" parentSchemaName="systemuser" parentDisplayName="User" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_accountmanageridyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msdyn_territory_account_ServiceTerritory" displayName="msdyn_territory_account_ServiceTerritory" parentSchemaName="territory" parentDisplayName="Territory" solution="FieldService (8.8.0.88)" />
@@ -503,12 +1255,188 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="2" schemaName="adx_name" displayName="Name" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_portallanguageid" displayName="Portal Language" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="2" schemaName="bookableresourceid" displayName="Bookable Resource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
         <Dependent type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="name" displayName="Name" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" solution="msdynce_Scheduling (9.0.0.0)" />
         <Dependent type="10" schemaName="msdyn_bookableresource_account_PreferredResource" displayName="msdyn_bookableresource_account_PreferredResource" parentSchemaName="bookableresource" parentDisplayName="Bookable Resource" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_preferredlanguageid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="defaultpricelevelid" displayName="Price List" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_managingpartnerid" displayName="Managing Partner" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="parentcustomerid" displayName="Company Name" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="preferredequipmentid" displayName="Preferred Facility/Equipment" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="preferredserviceid" displayName="Preferred Service" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="caseorigincode" displayName="Origin" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="casetypecode" displayName="Case Type" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="contractdetailid" displayName="Contract Line" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="contractid" displayName="Contract" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="contractservicelevelcode" displayName="Service Level" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customersatisfactioncode" displayName="Satisfaction" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="followupby" displayName="Follow Up By" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="incidentid" displayName="Case" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="incidentid" displayName="Case" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="kbarticleid" displayName="Knowledge Base Article" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partnercontactid" displayName="Partner Contact" parentSchemaName="incident" parentDisplayName="Case" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partnerid" displayName="Partner" parentSchemaName="incident" parentDisplayName="Case" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_functionallocation" displayName="Functional Location" parentSchemaName="incident" parentDisplayName="Case" solution="msdyn_FieldService_patch_update (8.8.43.77)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_incidenttype" displayName="Incident Type" parentSchemaName="incident" parentDisplayName="Case" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_iotalert" displayName="IoT Alert" parentSchemaName="incident" parentDisplayName="Case" solution="msdyn_ConnectedCustomerService (9.0.20115.1014)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="prioritycode" displayName="Priority" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="prioritycode" displayName="Priority" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="prioritycode" displayName="Priority" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="productid" displayName="Product" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="productserialnumber" displayName="Serial Number" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="subjectid" displayName="Subject" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ticketnumber" displayName="Case Number" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ticketnumber" displayName="Case Number" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="title" displayName="Case Title" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases I Follow" displayName="Cases I Follow" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="title" displayName="Case Title" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="26" schemaName="Cases Being Followed" displayName="Cases Being Followed" parentSchemaName="incident" parentDisplayName="Case" id="{54949c89-5d90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="title" displayName="Case Title" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="address1_city" displayName="City" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
@@ -735,6 +1663,38 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="2" schemaName="msdyn_functionallocationid" displayName="Functional Location" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_AssetCommon (1.0.7.102)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" solution="msdyn_AssetCommon (1.0.7.102)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" displayName="msdyn_msdyn_functionallocation_incident_FunctionalLocation" parentSchemaName="msdyn_functionallocation" parentDisplayName="Functional Location" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_incidenttypeid" displayName="Incident Type" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_incidenttype_incident_IncidentType" displayName="msdyn_msdyn_incidenttype_incident_IncidentType" parentSchemaName="msdyn_incidenttype" parentDisplayName="Incident Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_description" displayName="Description" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.18.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_iotalertid" displayName="IoT Alert" parentSchemaName="msdyn_iotalert" parentDisplayName="IoT Alert" solution="IoTConnector (1.8.18.0)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_iotalert_incident_IoTAlert" displayName="msdyn_msdyn_iotalert_incident_IoTAlert" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_organizationalunitid" displayName="Organizational Unit" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_taxcode" parentDisplayName="Tax Code" solution="FieldServiceCommon (1.0.0.134)" />
         <Dependent type="10" schemaName="msdyn_msdyn_taxcode_account_SalesTaxCode" displayName="msdyn_msdyn_taxcode_account_SalesTaxCode" parentSchemaName="msdyn_taxcode" parentDisplayName="Tax Code" />
       </MissingDependency>
@@ -751,6 +1711,318 @@
         <Dependent type="10" schemaName="msdyn_msdyn_workhourtemplate_account_workhourtemplate" displayName="msdyn_msdyn_workhourtemplate_account_workhourtemplate" parentSchemaName="msdyn_workhourtemplate" parentDisplayName="Work template" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="2" schemaName="msdyn_name" displayName="Name" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_workordertypeid" displayName="Work Order Type" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="budgetamount" displayName="Budget Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="campaignid" displayName="Source Campaign" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_MarketingSales (9.0.4.29)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="closeprobability" displayName="Probability" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="closeprobability" displayName="Probability" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="closeprobability" displayName="Probability" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="closeprobability" displayName="Probability" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="currentsituation" displayName="Current Situation" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerneed" displayName="Customer Need" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="description" displayName="Description" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="description" displayName="Description" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="discountamount" displayName="Opportunity Discount Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="discountamount" displayName="Opportunity Discount Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="discountpercentage" displayName="Opportunity Discount (%)" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="discountpercentage" displayName="Opportunity Discount (%)" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedclosedate" displayName="Est. Close Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedclosedate" displayName="Est. Close Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedclosedate" displayName="Est. Close Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedclosedate" displayName="Est. Close Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedclosedate" displayName="Est. Close Date" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedvalue" displayName="Est. Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedvalue" displayName="Est. Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedvalue" displayName="Est. Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedvalue" displayName="Est. Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="freightamount" displayName="Freight Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="freightamount" displayName="Freight Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="isrevenuesystemcalculated" displayName="Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="isrevenuesystemcalculated" displayName="Revenue" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partnerid" displayName="Partner" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partneroppid" displayName="Partner Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_accountmanagerid" displayName="Account Manager" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_accountmanager_opportunity" displayName="msdyn_accountmanager_opportunity" parentSchemaName="systemuser" parentDisplayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contractorganizationalunitid" displayName="Contracting Unit" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_organizationalunit_opportunity" displayName="msdyn_organizationalunit_opportunity" parentSchemaName="msdyn_organizationalunit" parentDisplayName="Organizational Unit" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_ordertype" displayName="Order Type" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FieldServiceCommon (1.0.0.134)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_workordertype" displayName="Work Order Type" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" displayName="msdyn_msdyn_workordertype_opportunity_WorkOrderType" parentSchemaName="msdyn_workordertype" parentDisplayName="Work Order Type" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_workordertype" displayName="Work Order Type" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityratingcode" displayName="Rating" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityratingcode" displayName="Rating" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityratingcode" displayName="Rating" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityratingcode" displayName="Rating" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="originatingleadid" displayName="Originating Lead" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentaccountid" displayName="Account" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentaccountid" displayName="Account" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentcontactid" displayName="Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentcontactid" displayName="Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="pricelevelid" displayName="Price List" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="pricelevelid" displayName="Price List" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="proposedsolution" displayName="Proposed Solution" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="purchaseprocess" displayName="Purchase Process" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="purchasetimeframe" displayName="Purchase Timeframe" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="salesstagecode" displayName="Process Code" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities I Follow" displayName="Opportunities I Follow" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="26" schemaName="Opportunities Being Followed" displayName="Opportunities Being Followed" parentSchemaName="opportunity" parentDisplayName="Opportunity" id="{b2a4f916-5f90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamount" displayName="Total Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamount" displayName="Total Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamountlessfreight" displayName="Total Pre-Freight Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamountlessfreight" displayName="Total Pre-Freight Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totallineitemamount" displayName="Total Detail Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totallineitemamount" displayName="Total Detail Amount" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totaltax" displayName="Total Tax" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totaltax" displayName="Total Tax" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentbundleidref" displayName="Parent bundle product" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_SalesPatch (9.0.1904.3002)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="2" schemaName="name" displayName="Territory Name" parentSchemaName="territory" parentDisplayName="Territory" solution="msdynce_AppCommon (9.0.4.0066)" />
         <Dependent type="10" schemaName="msdyn_territory_account_ServiceTerritory" displayName="msdyn_territory_account_ServiceTerritory" parentSchemaName="territory" parentDisplayName="Territory" />
       </MissingDependency>
@@ -759,16 +2031,44 @@
         <Dependent type="10" schemaName="msdyn_territory_account_ServiceTerritory" displayName="msdyn_territory_account_ServiceTerritory" parentSchemaName="territory" parentDisplayName="Territory" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="20" displayName="Field Service - Administrator" solution="FieldService (8.8.0.88)" id="{00bb53d6-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="CSR Manager" solution="msdynce_Service (9.0.5.56)" id="{16603b19-7e23-49af-87c7-bf43714172bd}" parentId="{1808b939-dd07-4ca7-aa99-ddd2734378f1}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="20" displayName="CSR Manager" solution="msdynce_Service (9.0.5.56)" id="{16603b19-7e23-49af-87c7-bf43714172bd}" parentId="{1808b939-dd07-4ca7-aa99-ddd2734378f1}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Customer service app access" solution="msdynce_Customerservicehub (9.0.5.0056)" id="{3dac4d9e-568c-e611-80d4-00155d42a122}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="20" displayName="Customer service app access" solution="msdynce_Customerservicehub (9.0.5.0056)" id="{3dac4d9e-568c-e611-80d4-00155d42a122}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="20" displayName="Field Service - Inventory Purchase" solution="FieldService (8.8.0.88)" id="{c4b99aff-89b6-e311-9b7e-00155da8fa1b}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Customer Service Representative" solution="msdynce_Service (9.0.5.56)" id="{c66db946-a3f9-4b60-9653-deb2b2dd3320}" parentId="{ecfd0b44-5720-45e3-ae68-417ddb0fb654}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="20" displayName="Customer Service Representative" solution="msdynce_Service (9.0.5.56)" id="{c66db946-a3f9-4b60-9653-deb2b2dd3320}" parentId="{ecfd0b44-5720-45e3-ae68-417ddb0fb654}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Field Service - Dispatcher" solution="IoTConnector (1.8.18.0)" id="{d008bfde-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="20" displayName="Field Service - Resource" solution="FieldService (8.8.0.88)" id="{dc08bfde-da92-e111-9d8c-000c2959f9b8}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="My Open Leads" displayName="My Open Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001005}" />
@@ -784,23 +2084,139 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Active Cases" displayName="My Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001028}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Resolved Cases" displayName="My Resolved Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001029}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Cases" displayName="Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001032}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="Active Cases" displayName="Active Cases" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{00000000-0000-0000-00aa-000010001032}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="26" schemaName="My Open Opportunities" displayName="My Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003000}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Open Opportunities" displayName="Open Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003001}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Closed Opportunities" displayName="Closed Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010003006}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Product Inline Edit View" displayName="Opportunity Product Inline Edit View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" id="{01010de7-749e-4fe6-8037-aca560a4fcbe}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Product Inline Edit View" displayName="Opportunity Product Inline Edit View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_Sales (9.0.4.0076)" id="{01010de7-749e-4fe6-8037-aca560a4fcbe}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Contacts" displayName="All Contacts" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{0d5d377b-5e7c-47b5-bab1-a5cb8b4ac105}" />
+        <Dependent type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Services" displayName="Active Services" parentSchemaName="service" parentDisplayName="Service" solution="msdynce_Service (9.0.5.56)" id="{2bd4de5e-a7b4-4f5d-8fde-eb3b62d8e2b2}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Competitors (summary)" displayName="All Competitors (summary)" parentSchemaName="competitor" parentDisplayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" id="{57bca9ac-87a0-4c28-adc8-2d0a4645f29e}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Products Lookup View" displayName="Active Products Lookup View" parentSchemaName="product" parentDisplayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" id="{58afc3c5-8add-4552-98cb-473bc8f75619}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="26" schemaName="All Leads" displayName="All Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{5a926b99-3a5f-df11-ae90-00155d2e3002}" />
         <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Quote Associated View" displayName="Quote Associated View" parentSchemaName="quote" parentDisplayName="Quote" solution="msdynce_Sales (9.0.4.0076)" id="{642095db-91dd-4813-bb31-665a3a2bae61}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Active Contracts" displayName="Active Contracts" parentSchemaName="contract" parentDisplayName="Contract" solution="msdynce_Service (9.0.5.56)" id="{646de3ee-ebfb-4d19-8a44-4a619505e188}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="26" schemaName="All Accounts" displayName="All Accounts" parentSchemaName="account" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
         <Dependent type="60" displayName="Accounts Dashboard" parentDisplayName="Account" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="26" schemaName="Service-Maintenance Based Opportunity Quotes" displayName="Service-Maintenance Based Opportunity Quotes" parentSchemaName="quote" parentDisplayName="Quote" solution="FieldService (8.8.0.88)" id="{78608e42-a191-e611-8114-00155db8ce11}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Contract Line With Allotments" displayName="Contract Line With Allotments" parentSchemaName="contractdetail" parentDisplayName="Contract Line" solution="msdynce_Service (9.0.5.56)" id="{8fa2705c-7e4c-4c0e-b611-4593b35a4c9e}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Opportunities" displayName="All Opportunities" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{c6f6fc1b-1b3e-e711-80e1-00155d871bb4}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Service Maintenance Line Grid View" displayName="Service Maintenance Line Grid View" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="FieldService (8.8.0.88)" id="{d85fb95c-fe58-e611-810c-00155db93107}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Product Inline Edit View: Bundle Products" displayName="Opportunity Product Inline Edit View: Bundle Products" parentSchemaName="opportunityproduct" parentDisplayName="Opportunity Line" solution="msdynce_SalesPatch (9.0.1904.3002)" id="{e175dfbf-8eae-4af2-9dd2-68c43c14d40f}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Price List Lookup View" displayName="Price List Lookup View" parentSchemaName="pricelevel" parentDisplayName="Price List" solution="msdynce_ProductManagement (9.0.4.0066)" id="{ee499892-35e1-4d07-a1b7-bb69fe9bfd42}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Cases by Priority" displayName="Cases by Priority" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{0f0fb995-9d6f-453c-b26d-8f443e42e676}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Opportunities by Pipeline Phase" displayName="Opportunities by Pipeline Phase" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{166785b0-073a-e711-80e3-00155d42a416}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Cases By Account" displayName="Cases By Account" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{38872e4f-ac99-e511-80da-00155dc1b253}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Active Cases by Agent" displayName="Active Cases by Agent" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{4143b74e-4a07-4d01-9ffe-2cdcaa4208fd}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="59" schemaName="Active Cases by Agent" displayName="Active Cases by Agent" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{4143b74e-4a07-4d01-9ffe-2cdcaa4208fd}" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Opportunities by Status – Column Chart" displayName="Opportunities by Status – Column Chart" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{4a534f35-1e3e-e711-80e1-00155d871bb4}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Opportunities by Account" displayName="Opportunities by Account" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{8ed63b02-1e3e-e711-80e1-00155d871bb4}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Case Mix (By Origin)" displayName="Case Mix (By Origin)" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{99782da3-a382-de11-9ff3-00155da3b012}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Cases by SLA Status Over Week" displayName="Cases by SLA Status Over Week" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{997cbf5a-1c09-4990-b174-a8ef1530092b}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="59" schemaName="Leads by Owner (Tag Chart)" displayName="Leads by Owner (Tag Chart)" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{b92a5119-193a-e711-80e3-00155d42a416}" />
@@ -809,6 +2225,10 @@
       <MissingDependency>
         <Required type="59" schemaName="Leads by Source (DOUGHNUT)" displayName="Leads by Source (DOUGHNUT)" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{d311600c-163a-e711-80e3-00155d42a416}" />
         <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Opportunities by Rating" displayName="Opportunities by Rating" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{e91f96d7-1d3e-e711-80e1-00155d871bb4}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="59" schemaName="Leads by Rating" displayName="Leads by Rating" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{f5976c58-5693-de11-97d4-00155da3b01e}" />
@@ -823,6 +2243,22 @@
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+        <Dependent type="60" displayName="Contacts Dashboard" parentDisplayName="Contact" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Field Service Information" parentDisplayName="Opportunity" solution="FieldService (8.8.0.88)" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="60" displayName="Information" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
         <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
       </MissingDependency>
@@ -831,8 +2267,28 @@
         <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" solution="msdynce_ServicePatch201911 (9.0.21062.1009)" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Cases Dashboard" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+        <Dependent type="60" displayName="Cases Dashboard" parentDisplayName="Case" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" id="{f658c846-f74c-459b-b591-b97558958106}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
+        <Dependent type="60" displayName="Opportunities Dashboard" parentDisplayName="Opportunity" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="60" displayName="Account for Multisession experience" parentDisplayName="Account" solution="msdynce_ServicePatch201911 (9.0.21062.1009)" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
@@ -840,7 +2296,15 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
+        <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
@@ -848,11 +2312,31 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Opportunity/Opportunity.Library.js" displayName="msdyn_/Opportunity/Opportunity.Library.js" solution="FieldService (8.8.0.88)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
@@ -860,11 +2344,31 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Case" id="{f658c846-f74c-459b-b591-b97558958106}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
         <Dependent type="60" displayName="Account for Multisession experience" parentDisplayName="Account" id="{ff49442f-8c60-4877-bdae-8fe51e6f4636}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="Sales/Opportunity/Opportunity_main_system_library.js" displayName="Sales/Opportunity/Opportunity_main_system_library.js" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2106.2010)" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="9" schemaName="hsl_purpose" displayName="Purpose" solution="Active" />
