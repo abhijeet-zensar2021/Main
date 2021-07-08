@@ -1,13 +1,13 @@
 Note-This environment is created on 8th July 2021 and it will expire on 8th August 2021.
 
-D365 Environments
+D365 Environments-
 
 Dev - https://ztmsdev.crm8.dynamics.com/
 Prod - https://ztmsprod.crm8.dynamics.com/
 UAT - https://ztmsuatesting.crm8.dynamics.com/
 
  
-Id 
+Id-
 Elijah@ztmsd365.onmicrosoft.com
 Abhijeet@ztmsd365.onmicrosoft.com
 Harshal@ztmsd365.onmicrosoft.com
@@ -15,5 +15,12 @@ Somyata@ztmsd365.onmicrosoft.com
 Deep@ztmsd365.onmicrosoft.com
 Shalini@ztmsd365.onmicrosoft.com
 
-Password
+Password-
 Zensar@1234
+
+
+//D365 Client Secret
+
+Client/AppId -50908331-b7a9-449c-b2d9-9e1fc83756a7
+Value .zO3~f1.Mwt.oN66rahdc~p6Tk5H2Avq.p
+SecID - f246e1ca-8f29-44c8-ad80-719b01f96073
