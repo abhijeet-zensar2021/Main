@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="account" behavior="0" />
+      <RootComponent type="1" schemaName="activitypointer" behavior="0" />
       <RootComponent type="1" schemaName="category" behavior="0" />
       <RootComponent type="1" schemaName="contact" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
@@ -90,6 +91,7 @@
       <RootComponent type="60" id="{15915835-b87c-49ec-9ffc-bfac3ac44ef1}" />
       <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      <RootComponent type="60" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
       <RootComponent type="60" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
       <RootComponent type="60" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
     </RootComponents>
@@ -2271,6 +2273,10 @@
         <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="60" displayName="Activities Dashboard" parentDisplayName="Activity" solution="msdynce_Service (9.0.5.56)" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
+        <Dependent type="60" displayName="Activities Dashboard" parentDisplayName="Activity" id="{a4640db1-4962-4e79-92c6-690e627924d7}" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="60" displayName="Information" parentDisplayName="Account" solution="msdynce_AppCommon (9.0.4.0066)" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
         <Dependent type="60" displayName="Information" parentDisplayName="Account" id="{b053a39a-041a-4356-acef-ddf00182762b}" />
       </MissingDependency>
@@ -2300,7 +2306,7 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="AppCommon/Contact/Contact_main_system_library.js" displayName="AppCommon/Contact/Contact_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)" />
-        <Dependent type="60" displayName="Contact for Multisession experience" parentDisplayName="Contact" id="{e06af4d1-2812-45c7-a9c2-9fb73fee7bec}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
