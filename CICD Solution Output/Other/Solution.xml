@@ -2371,7 +2371,7 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="Sales/Opportunity/Opportunity_main_system_library.js" displayName="Sales/Opportunity/Opportunity_main_system_library.js" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent type="60" displayName="Information" parentDisplayName="Opportunity" id="{a2a56263-ec37-4991-a3b0-e7b37a71d818}" />
+        <Dependent type="60" displayName="Field Service Information" parentDisplayName="Opportunity" id="{8335a04b-dc80-44b0-83ab-11ed80f93d3e}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2106.2010)" />
