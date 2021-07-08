@@ -3,8 +3,13 @@ Note-This environment is created on 8th July 2021 and it will expire on 8th Augu
 D365 Environments-
 
 Dev - https://ztmsdev.crm8.dynamics.com/
+AuthType=ClientSecret;url=https://ztmsdev.crm8.dynamics.com/;ClientId=50908331-b7a9-449c-b2d9-9e1fc83756a7;ClientSecret=.zO3~f1.Mwt.oN66rahdc~p6Tk5H2Avq.p
+
 Prod - https://ztmsprod.crm8.dynamics.com/
+AuthType=ClientSecret;url=https://ztmsprod.crm8.dynamics.com/;ClientId=50908331-b7a9-449c-b2d9-9e1fc83756a7;ClientSecret=.zO3~f1.Mwt.oN66rahdc~p6Tk5H2Avq.p
+
 UAT - https://ztmsuatesting.crm8.dynamics.com/
+AuthType=ClientSecret;url=https://ztmsuatesting.crm8.dynamics.com/;ClientId=50908331-b7a9-449c-b2d9-9e1fc83756a7;ClientSecret=.zO3~f1.Mwt.oN66rahdc~p6Tk5H2Avq.p
 
  
 Id-
