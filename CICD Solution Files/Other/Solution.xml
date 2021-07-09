@@ -78,38 +78,155 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" behavior="2" />
+      <RootComponent type="1" schemaName="adx_externalidentity" behavior="2" />
+      <RootComponent type="1" schemaName="adx_invitation" behavior="2" />
+      <RootComponent type="1" schemaName="adx_pagealert" behavior="2" />
+      <RootComponent type="1" schemaName="adx_pagenotification" behavior="2" />
+      <RootComponent type="1" schemaName="adx_pollsubmission" behavior="2" />
+      <RootComponent type="1" schemaName="adx_webfilelog" behavior="2" />
+      <RootComponent type="1" schemaName="adx_webformsession" behavior="2" />
+      <RootComponent type="1" schemaName="adx_webpage" behavior="2" />
+      <RootComponent type="1" schemaName="adx_webpagehistory" behavior="2" />
+      <RootComponent type="1" schemaName="adx_webpagelog" behavior="2" />
       <RootComponent type="1" schemaName="category" behavior="0" />
       <RootComponent type="1" schemaName="contact" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
+      <RootComponent type="1" schemaName="incident" behavior="2" />
       <RootComponent type="1" schemaName="lead" behavior="0" />
+      <RootComponent type="1" schemaName="msdyn_actual" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_contactpricelist" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_estimateline" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_fact" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_invoicelinetransaction" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_journalline" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_liveconversation" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_ocliveworkitem" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_opportunitylinetransaction" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_orderlinetransaction" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_quotelinetransaction" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_rma" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_rtv" behavior="2" />
+      <RootComponent type="1" schemaName="msdyn_workorder" behavior="2" />
+      <RootComponent type="1" schemaName="opportunity" behavior="2" />
       <RootComponent type="60" id="{70ad8b15-e3f3-4d7d-9e4b-16cb4e51b484}" />
       <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      <RootComponent type="60" id="{eb3748b8-5f90-4050-a039-8b7d279ad8fe}" />
+      <RootComponent type="60" id="{f7e6d29b-1e3e-e711-80e1-00155d871bb4}" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
         <Required type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="10" schemaName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="bpf_contactidname" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="bpf_contactidyominame" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_externalidentity" displayName="External Identity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_externalidentity" displayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_invitation" displayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitecontactname" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitecontactyominame" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitercontactname" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitercontactyominame" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_redeemedcontactname" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_invitation" displayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_redeemedcontactyominame" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_pagealert" displayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_pagealert" displayName="Page Alert" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagealert" displayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_subscribercontact_pagealert" displayName="adx_subscribercontact_pagealert" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagealert" displayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_subscriberidname" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagealert" displayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_subscriberidyominame" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_pagenotification" displayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_pagenotification" displayName="Page Notification" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagenotification" displayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_pagenotification" displayName="adx_contact_pagenotification" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagenotification" displayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_recipientname" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pagenotification" displayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_recipientyominame" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_pollsubmission" displayName="adx_contact_pollsubmission" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_pollsubmission" displayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_portallanguage" displayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
@@ -117,27 +234,99 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webfilelog" displayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_webfilelog" displayName="Web File Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webfilelog" displayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_webfilelog" displayName="adx_contact_webfilelog" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webfilelog" displayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webfilelog" displayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_webformsession" displayName="Web Form Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_webformsession_contact" displayName="adx_webformsession_contact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactname" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webformsession" displayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactyominame" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_webpage" displayName="Web Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="10" schemaName="adx_contact_webpage" displayName="adx_contact_webpage" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="adx_authoridname" parentSchemaName="adx_webpage" parentDisplayName="Web Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpage" displayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="adx_authoridyominame" parentSchemaName="adx_webpage" parentDisplayName="Web Page" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webpagehistory" displayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_webpagehistory" displayName="Web Page History" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagehistory" displayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_changedcontact_webpagehistory" displayName="adx_changedcontact_webpagehistory" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagehistory" displayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_changedbyidname" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagehistory" displayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_changedbyidyominame" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="adx_webpagelog" displayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="adx_webpagelog" displayName="Web Page Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagelog" displayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_webpagelog" displayName="adx_contact_webpagelog" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagelog" displayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="adx_webpagelog" displayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="incident" displayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msa_partnercontactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="msa_partnercontactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
@@ -301,63 +490,291 @@
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_actual" displayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_actual" displayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_contactpricelist_Contact" displayName="msdyn_contact_msdyn_contactpricelist_Contact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactname" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_contactpricelist" displayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactyominame" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_estimateline" displayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_fact" displayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_fact" displayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_invoicelinetransaction" displayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_journalline" displayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_journalline" displayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.383)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_liveconversation" displayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_liveconversation" parentDisplayName="Ongoing conversation (Deprecated)" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_ocliveworkitem" displayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_opportunitylinetransaction" displayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_orderlinetransaction" displayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_quotelinetransaction" displayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_rma" displayName="RMA" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_rma_RequestedByContact" displayName="msdyn_contact_msdyn_rma_RequestedByContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_requestedbycontactname" parentSchemaName="msdyn_rma" parentDisplayName="RMA" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rma" displayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_requestedbycontactyominame" parentSchemaName="msdyn_rma" parentDisplayName="RMA" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_rtv" displayName="RTV" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_rtv_VendorContact" displayName="msdyn_contact_msdyn_rtv_VendorContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_vendorcontactname" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_rtv" displayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_vendorcontactyominame" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="msdyn_workorder" displayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_workorder_ReportedByContact" displayName="msdyn_contact_msdyn_workorder_ReportedByContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_reportedbycontactname" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msdyn_workorder" displayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_reportedbycontactyominame" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
       </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
-        <Dependent type="1" schemaName="contact" displayName="Contact" />
+        <Dependent type="1" schemaName="opportunity" displayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msa_partneroppidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="msa_partneroppidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
       </MissingDependency>
       <MissingDependency>
         <Required type="10" schemaName="msa_contact_managingpartner" displayName="msa_contact_managingpartner" parentSchemaName="account" parentDisplayName="Account" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
@@ -376,12 +793,592 @@
         <Dependent type="2" schemaName="adx_preferredlanguageidname" parentSchemaName="contact" parentDisplayName="Contact" />
       </MissingDependency>
       <MissingDependency>
+        <Required type="10" schemaName="adx_changedcontact_webpagehistory" displayName="adx_changedcontact_webpagehistory" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_changedcontact_webpagehistory" displayName="adx_changedcontact_webpagehistory" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_changedcontact_webpagehistory" displayName="adx_changedcontact_webpagehistory" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_changedbyidname" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_changedcontact_webpagehistory" displayName="adx_changedcontact_webpagehistory" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_changedbyidyominame" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_pagenotification" displayName="adx_contact_pagenotification" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_pagenotification" displayName="adx_contact_pagenotification" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_pagenotification" displayName="adx_contact_pagenotification" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_recipientname" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_pagenotification" displayName="adx_contact_pagenotification" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_recipientyominame" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_pollsubmission" displayName="adx_contact_pollsubmission" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_pollsubmission" displayName="adx_contact_pollsubmission" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_pollsubmission" displayName="adx_contact_pollsubmission" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_pollsubmission" displayName="adx_contact_pollsubmission" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webfilelog" displayName="adx_contact_webfilelog" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_webfilelog" displayName="adx_contact_webfilelog" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webfilelog" displayName="adx_contact_webfilelog" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webfilelog" displayName="adx_contact_webfilelog" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webpage" displayName="adx_contact_webpage" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="10" schemaName="adx_contact_webpage" displayName="adx_contact_webpage" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webpage" displayName="adx_contact_webpage" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="adx_authoridname" parentSchemaName="adx_webpage" parentDisplayName="Web Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webpage" displayName="adx_contact_webpage" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="adx_authoridyominame" parentSchemaName="adx_webpage" parentDisplayName="Web Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webpagelog" displayName="adx_contact_webpagelog" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_webpagelog" displayName="adx_contact_webpagelog" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webpagelog" displayName="adx_contact_webpagelog" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidname" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_contact_webpagelog" displayName="adx_contact_webpagelog" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactidyominame" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitecontactname" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitecontactyominame" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitercontact" displayName="adx_invitation_invitercontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitercontact" displayName="adx_invitation_invitercontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitercontact" displayName="adx_invitation_invitercontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitercontact" displayName="adx_invitation_invitercontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitercontactname" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_invitercontact" displayName="adx_invitation_invitercontact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitercontactyominame" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_redeemedContact" displayName="adx_invitation_redeemedContact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_redeemedContact" displayName="adx_invitation_redeemedContact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_redeemedContact" displayName="adx_invitation_redeemedContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_redeemedContact" displayName="adx_invitation_redeemedContact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_redeemedcontactname" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_invitation_redeemedContact" displayName="adx_invitation_redeemedContact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_redeemedcontactyominame" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_subscribercontact_pagealert" displayName="adx_subscribercontact_pagealert" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_subscribercontact_pagealert" displayName="adx_subscribercontact_pagealert" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_subscribercontact_pagealert" displayName="adx_subscribercontact_pagealert" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_subscriberidname" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_subscribercontact_pagealert" displayName="adx_subscribercontact_pagealert" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_subscriberidyominame" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_webformsession_contact" displayName="adx_webformsession_contact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_webformsession_contact" displayName="adx_webformsession_contact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_webformsession_contact" displayName="adx_webformsession_contact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactname" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="adx_webformsession_contact" displayName="adx_webformsession_contact" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactyominame" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="10" schemaName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="bpf_contactidname" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="bpf_contactidyominame" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partnercontactidname" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_incident" displayName="msa_contact_incident" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partnercontactidyominame" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneroppidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msa_contact_opportunity" displayName="msa_contact_opportunity" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneroppidyominame" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_contactpricelist_Contact" displayName="msdyn_contact_msdyn_contactpricelist_Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_contactpricelist_Contact" displayName="msdyn_contact_msdyn_contactpricelist_Contact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_contactpricelist_Contact" displayName="msdyn_contact_msdyn_contactpricelist_Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactname" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_contactpricelist_Contact" displayName="msdyn_contact_msdyn_contactpricelist_Contact" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactyominame" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactCustomer" displayName="msdyn_contact_msdyn_estimateline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactCustomer" displayName="msdyn_contact_msdyn_estimateline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactCustomer" displayName="msdyn_contact_msdyn_estimateline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactCustomer" displayName="msdyn_contact_msdyn_estimateline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactCustomer" displayName="msdyn_contact_msdyn_estimateline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactVendor" displayName="msdyn_contact_msdyn_fact_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactVendor" displayName="msdyn_contact_msdyn_fact_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_fact_ContactVendor" displayName="msdyn_contact_msdyn_fact_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactVendor" displayName="msdyn_contact_msdyn_fact_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_fact_ContactVendor" displayName="msdyn_contact_msdyn_fact_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactCustomer" displayName="msdyn_contact_msdyn_journalline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_journalline_ContactCustomer" displayName="msdyn_contact_msdyn_journalline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactCustomer" displayName="msdyn_contact_msdyn_journalline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactCustomer" displayName="msdyn_contact_msdyn_journalline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactCustomer" displayName="msdyn_contact_msdyn_journalline_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_liveconversation_Customer" displayName="msdyn_contact_msdyn_liveconversation_Customer" parentSchemaName="contact" parentDisplayName="Contact" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_liveconversation_Customer" displayName="msdyn_contact_msdyn_liveconversation_Customer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_ocliveworkitem_Customer" displayName="msdyn_contact_msdyn_ocliveworkitem_Customer" parentSchemaName="contact" parentDisplayName="Contact" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_ocliveworkitem_Customer" displayName="msdyn_contact_msdyn_ocliveworkitem_Customer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_rma_RequestedByContact" displayName="msdyn_contact_msdyn_rma_RequestedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_rma_RequestedByContact" displayName="msdyn_contact_msdyn_rma_RequestedByContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_rma_RequestedByContact" displayName="msdyn_contact_msdyn_rma_RequestedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_requestedbycontactname" parentSchemaName="msdyn_rma" parentDisplayName="RMA" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_rma_RequestedByContact" displayName="msdyn_contact_msdyn_rma_RequestedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_requestedbycontactyominame" parentSchemaName="msdyn_rma" parentDisplayName="RMA" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_rtv_VendorContact" displayName="msdyn_contact_msdyn_rtv_VendorContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_rtv_VendorContact" displayName="msdyn_contact_msdyn_rtv_VendorContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_rtv_VendorContact" displayName="msdyn_contact_msdyn_rtv_VendorContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_vendorcontactname" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_rtv_VendorContact" displayName="msdyn_contact_msdyn_rtv_VendorContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_vendorcontactyominame" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_workorder_ReportedByContact" displayName="msdyn_contact_msdyn_workorder_ReportedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_workorder_ReportedByContact" displayName="msdyn_contact_msdyn_workorder_ReportedByContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_workorder_ReportedByContact" displayName="msdyn_contact_msdyn_workorder_ReportedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_reportedbycontactname" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_workorder_ReportedByContact" displayName="msdyn_contact_msdyn_workorder_ReportedByContact" parentSchemaName="contact" parentDisplayName="Contact" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_reportedbycontactyominame" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomername" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomeryominame" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactVendor" displayName="msdyn_contact_msdyn_actual_ContactVendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactVendor" displayName="msdyn_contact_msdyn_actual_ContactVendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_actual_ContactVendor" displayName="msdyn_contact_msdyn_actual_ContactVendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactVendor" displayName="msdyn_contact_msdyn_actual_ContactVendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactvendorname" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="10" schemaName="msdyn_contact_msdyn_actual_ContactVendor" displayName="msdyn_contact_msdyn_actual_ContactVendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactvendoryominame" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="bpf_contactid" displayName="contact" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="10" schemaName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" displayName="bpf_contact_adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="bpf_contactid" displayName="contact" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="bpf_contactid" displayName="contact" parentSchemaName="adx_bpf_c2857b638fa7473d8e2f112c232cebd8" parentDisplayName="Change Password for Portals Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="Contact" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_externalidentity" displayName="adx_contact_externalidentity" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="Contact" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" solution="MicrosoftIdentity (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactid" displayName="Contact" parentSchemaName="adx_externalidentity" parentDisplayName="External Identity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_invitecontact" displayName="Invite Contact" parentSchemaName="adx_invitation" parentDisplayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_invitecontact" displayName="Invite Contact" parentSchemaName="adx_invitation" parentDisplayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitecontact" displayName="Invite Contact" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_invitercontact" displayName="Inviter" parentSchemaName="adx_invitation" parentDisplayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_invitercontact" displayName="Inviter" parentSchemaName="adx_invitation" parentDisplayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_invitercontact" displayName="Inviter" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_redeemedcontact" displayName="Redeemed Contact" parentSchemaName="adx_invitation" parentDisplayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_invitation_invitecontact" displayName="adx_invitation_invitecontact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_redeemedcontact" displayName="Redeemed Contact" parentSchemaName="adx_invitation" parentDisplayName="Invitation" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_redeemedcontact" displayName="Redeemed Contact" parentSchemaName="adx_invitation" parentDisplayName="Invitation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_subscriberid" displayName="Subscriber" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_subscribercontact_pagealert" displayName="adx_subscribercontact_pagealert" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_subscriberid" displayName="Subscriber" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_subscriberid" displayName="Subscriber" parentSchemaName="adx_pagealert" parentDisplayName="Page Alert" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_recipient" displayName="Recipient" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_pagenotification" displayName="adx_contact_pagenotification" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_recipient" displayName="Recipient" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_recipient" displayName="Recipient" parentSchemaName="adx_pagenotification" parentDisplayName="Page Notification" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="Contact" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_pollsubmission" displayName="adx_contact_pollsubmission" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="Contact" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactid" displayName="Contact" parentSchemaName="adx_pollsubmission" parentDisplayName="Poll Submission" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="2" schemaName="adx_name" displayName="Name" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
         <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="adx_portallanguageid" displayName="Portal Language" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" solution="MicrosoftPortalBase (9.2.2103.1)" />
         <Dependent type="10" schemaName="adx_portallanguage_contact" displayName="adx_portallanguage_contact" parentSchemaName="adx_portallanguage" parentDisplayName="Portal Language" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="User" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_webfilelog" displayName="adx_contact_webfilelog" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="User" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactid" displayName="User" parentSchemaName="adx_webfilelog" parentDisplayName="Web File Log" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contact" displayName="Contact" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_webformsession_contact" displayName="adx_webformsession_contact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contact" displayName="Contact" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" solution="MicrosoftPortalWebForms (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contact" displayName="Contact" parentSchemaName="adx_webformsession" parentDisplayName="Web Form Session" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_authorid" displayName="Author" parentSchemaName="adx_webpage" parentDisplayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="10" schemaName="adx_contact_webpage" displayName="adx_contact_webpage" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_authorid" displayName="Author" parentSchemaName="adx_webpage" parentDisplayName="Web Page" solution="MicrosoftPortalDependencies (9.2.2103.0)" />
+        <Dependent type="2" schemaName="adx_authorid" displayName="Author" parentSchemaName="adx_webpage" parentDisplayName="Web Page" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_changedbyid" displayName="Changed By" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_changedcontact_webpagehistory" displayName="adx_changedcontact_webpagehistory" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_changedbyid" displayName="Changed By" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_changedbyid" displayName="Changed By" parentSchemaName="adx_webpagehistory" parentDisplayName="Web Page History" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="User" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="10" schemaName="adx_contact_webpagelog" displayName="adx_contact_webpagelog" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="adx_contactid" displayName="User" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" solution="MicrosoftPortalBase (9.2.2103.1)" />
+        <Dependent type="2" schemaName="adx_contactid" displayName="User" parentSchemaName="adx_webpagelog" parentDisplayName="Web Page Log" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="adx_preferredlanguageid" displayName="Preferred Language" parentSchemaName="contact" parentDisplayName="Contact" solution="MicrosoftPortalBase (9.2.2103.1)" />
@@ -410,6 +1407,22 @@
       <MissingDependency>
         <Required type="2" schemaName="preferredserviceid" displayName="Preferred Service" parentSchemaName="contact" parentDisplayName="Contact" solution="msdynce_Service (9.0.5.56)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Contact" id="{894cc46a-b0cb-4ab0-8bf6-200544e46a2d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customeridname" parentSchemaName="incident" parentDisplayName="Case" solution="Active" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partnercontactid" displayName="Partner Contact" parentSchemaName="incident" parentDisplayName="Case" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Customer" parentSchemaName="incident" parentDisplayName="Case" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partnercontactid" displayName="Partner Contact" parentSchemaName="incident" parentDisplayName="Case" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partnercontactid" displayName="Partner Contact" parentSchemaName="incident" parentDisplayName="Case" />
       </MissingDependency>
       <MissingDependency>
         <Required type="2" schemaName="address1_city" displayName="City" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
@@ -634,6 +1647,206 @@
       <MissingDependency>
         <Required type="2" schemaName="websiteurl" displayName="Website" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
         <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer contact ID" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer contact ID" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Customer contact ID" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_actual_ContactCustomer" displayName="msdyn_contact_msdyn_actual_ContactCustomer" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" solution="MicrosoftDynamicsScheduling (3.12.0.448)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_actual" parentDisplayName="Actual" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contact" displayName="Contact" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_contactpricelist_Contact" displayName="msdyn_contact_msdyn_contactpricelist_Contact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contact" displayName="Contact" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contact" displayName="Contact" parentSchemaName="msdyn_contactpricelist" parentDisplayName="Contact Price List" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_estimateline_ContactVendor" displayName="msdyn_contact_msdyn_estimateline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_estimateline" parentDisplayName="Estimate Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_fact" parentDisplayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_fact" parentDisplayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_fact" parentDisplayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_fact_ContactCustomer" displayName="msdyn_contact_msdyn_fact_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_fact" parentDisplayName="Fact" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_fact" parentDisplayName="Fact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_invoicelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_invoicelinetransaction" parentDisplayName="Invoice Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_journalline_ContactVendor" displayName="msdyn_contact_msdyn_journalline_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_journalline" parentDisplayName="Journal Line" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_liveconversation" parentDisplayName="Ongoing conversation (Deprecated)" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_liveconversation" parentDisplayName="Ongoing conversation (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_customername" parentSchemaName="msdyn_liveconversation" parentDisplayName="Ongoing conversation (Deprecated)" solution="Active" />
+        <Dependent type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_liveconversation" parentDisplayName="Ongoing conversation (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="OmnichannelBase (1.5.0.383)" />
+        <Dependent type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_customername" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" solution="Active" />
+        <Dependent type="2" schemaName="msdyn_customer" displayName="Customer" parentSchemaName="msdyn_ocliveworkitem" parentDisplayName="Conversation" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Customer" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_opportunitylinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_opportunitylinetransaction" parentDisplayName="Opportunity Line Detail (Deprecated)" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Contact Customer" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Contact Customer" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Contact Customer" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" displayName="msdyn_contact_msdyn_orderlinetransaction_ContactVendor" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_orderlinetransaction" parentDisplayName="Project Contract Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Contact Customer" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactcustomer" displayName="Contact Customer" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactcustomer" displayName="Contact Customer" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" displayName="msdyn_contact_msdyn_quotelinetransaction_ContactCustomer" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" solution="ProjectService (3.10.0.31)" />
+        <Dependent type="2" schemaName="msdyn_contactvendor" displayName="Vendor" parentSchemaName="msdyn_quotelinetransaction" parentDisplayName="Quote Line Detail" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_requestedbycontact" displayName="Requested By Contact" parentSchemaName="msdyn_rma" parentDisplayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_rma_RequestedByContact" displayName="msdyn_contact_msdyn_rma_RequestedByContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_requestedbycontact" displayName="Requested By Contact" parentSchemaName="msdyn_rma" parentDisplayName="RMA" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_requestedbycontact" displayName="Requested By Contact" parentSchemaName="msdyn_rma" parentDisplayName="RMA" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_vendorcontact" displayName="Vendor Contact" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_rtv_VendorContact" displayName="msdyn_contact_msdyn_rtv_VendorContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_vendorcontact" displayName="Vendor Contact" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_vendorcontact" displayName="Vendor Contact" parentSchemaName="msdyn_rtv" parentDisplayName="RTV" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_reportedbycontact" displayName="Reported By Contact" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="10" schemaName="msdyn_contact_msdyn_workorder_ReportedByContact" displayName="msdyn_contact_msdyn_workorder_ReportedByContact" parentSchemaName="contact" parentDisplayName="Contact" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msdyn_reportedbycontact" displayName="Reported By Contact" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" solution="FieldService (8.8.0.88)" />
+        <Dependent type="2" schemaName="msdyn_reportedbycontact" displayName="Reported By Contact" parentSchemaName="msdyn_workorder" parentDisplayName="Work Order" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="customeridname" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partneroppid" displayName="Partner Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="msa_partneroppid" displayName="Partner Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="MicrosoftCrmPortalDependencies (9.2.2001.0)" />
+        <Dependent type="2" schemaName="msa_partneroppid" displayName="Partner Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentcontactid" displayName="Contact" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentcontactidname" parentSchemaName="opportunity" parentDisplayName="Opportunity" solution="Active" />
+        <Dependent type="2" schemaName="customerid" displayName="Potential Customer" parentSchemaName="opportunity" parentDisplayName="Opportunity" />
       </MissingDependency>
       <MissingDependency>
         <Required type="20" displayName="CSR Manager" solution="msdynce_Service (9.0.5.56)" id="{16603b19-7e23-49af-87c7-bf43714172bd}" parentId="{1808b939-dd07-4ca7-aa99-ddd2734378f1}" />
