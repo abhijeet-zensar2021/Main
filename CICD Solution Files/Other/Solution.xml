@@ -6,7 +6,7 @@
       <LocalizedName description="Sample Application" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.10</Version>
+    <Version>1.0.0.11</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Crc829f</UniqueName>
@@ -79,6 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="1" schemaName="category" behavior="0" />
+      <RootComponent type="1" schemaName="cr846_newtestentity" behavior="0" />
       <RootComponent type="1" schemaName="cr846_testentity" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
