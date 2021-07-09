@@ -1,16 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <EntityRelationship Name="adx_invitation_invitecontacts" />
-  <EntityRelationship Name="adx_invitation_redeemedcontacts" />
-  <EntityRelationship Name="adx_portallanguage_contact" />
-  <EntityRelationship Name="adx_webrole_contact" />
   <EntityRelationship Name="business_unit_hsl_configsetting" />
   <EntityRelationship Name="business_unit_hsl_type" />
   <EntityRelationship Name="lk_hsl_configsetting_createdby" />
   <EntityRelationship Name="lk_hsl_configsetting_modifiedby" />
   <EntityRelationship Name="lk_hsl_type_createdby" />
   <EntityRelationship Name="lk_hsl_type_modifiedby" />
-  <EntityRelationship Name="msa_contact_managingpartner" />
   <EntityRelationship Name="owner_hsl_configsetting" />
   <EntityRelationship Name="owner_hsl_type" />
   <EntityRelationship Name="team_hsl_configsetting" />
