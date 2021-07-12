@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.21062.128" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>SampleApplication</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="Sample Application" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions />
+    <Version>1.0.0.12</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>Crc829f</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="CDS Default Publisher" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>cr846</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>14000</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode xsi:nil="true"></AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode xsi:nil="true"></ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="category" behavior="0" />
+      <RootComponent type="1" schemaName="cr846_newtestentity" behavior="0" />
+      <RootComponent type="1" schemaName="cr846_testentity" behavior="0" />
+      <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
+      <RootComponent type="1" schemaName="hsl_type" behavior="0" />
+      <RootComponent type="1" schemaName="lead" behavior="0" />
+      <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="1" schemaName="lead" displayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="accountidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="accountidyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="campaignidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="contactidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="contactidyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="createdbyname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="createdbyyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="createdonbehalfbyname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="createdonbehalfbyyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="customeridname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="customeridtype" displayName="Customer Type" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="customeridyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="entityimage" displayName="Entity Image" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="exchangerate" displayName="Exchange Rate" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="masterleadidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="masterleadidyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="modifiedbyname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="modifiedbyyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="modifiedonbehalfbyname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="modifiedonbehalfbyyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="msdyn_gdproptoutname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="msdyn_ordertypename" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="originatingcaseidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="owneriddsc" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="owneridname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="owneridtype" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="owneridyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="parentaccountidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="parentaccountidyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="parentcontactidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="parentcontactidyominame" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="qualifyingopportunityidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="relatedobjectidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="slainvokedidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="slaname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="2" schemaName="transactioncurrencyidname" parentSchemaName="lead" parentDisplayName="Lead" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_city" displayName="City" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_country" displayName="Country/Region" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_line1" displayName="Street 1" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_line2" displayName="Street 2" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_line3" displayName="Street 3" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_postalcode" displayName="ZIP/Postal Code" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="address1_stateorprovince" displayName="State/Province" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="campaignid" displayName="Source Campaign" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="companyname" displayName="Company Name" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="description" displayName="Description" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="donotbulkemail" displayName="Do not allow Bulk Emails" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="donotemail" displayName="Do not allow Emails" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="donotfax" displayName="Do not allow Faxes" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="donotphone" displayName="Do not allow Phone Calls" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="donotpostalmail" displayName="Do not allow Mails" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="donotsendmm" displayName="Marketing Material" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="emailaddress1" displayName="Email" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="fax" displayName="Fax" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="firstname" displayName="First Name" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="followemail" displayName="Follow Email Activity" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="fullname" displayName="Name" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="fullname" displayName="Name" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="industrycode" displayName="Industry" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="jobtitle" displayName="Job Title" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lastname" displayName="Last Name" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="lastusedincampaign" displayName="Last Campaign Date" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="leadid" displayName="Lead" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="leadid" displayName="Lead" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="leadqualitycode" displayName="Rating" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="leadsourcecode" displayName="Lead Source" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="mobilephone" displayName="Mobile Phone" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="numberofemployees" displayName="No. of Employees" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="pager" displayName="Pager" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="preferredcontactmethodcode" displayName="Preferred Method of Contact" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="revenue" displayName="Annual Revenue" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="salutation" displayName="Salutation" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="sic" displayName="SIC Code" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="subject" displayName="Topic" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads I Follow" displayName="Leads I Follow" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa02}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="subject" displayName="Topic" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="26" schemaName="Leads Being Followed" displayName="Leads Being Followed" parentSchemaName="lead" parentDisplayName="Lead" id="{d603107c-5e90-e011-95ae-00155d9cfa03}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="subject" displayName="Topic" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="telephone1" displayName="Business Phone" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="telephone2" displayName="Home Phone" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="telephone3" displayName="Other Phone" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="websiteurl" displayName="Website" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="My Open Leads" displayName="My Open Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001005}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Open Leads" displayName="Open Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001006}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Closed Leads" displayName="Closed Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{00000000-0000-0000-00aa-000010001009}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Leads" displayName="All Leads" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{5a926b99-3a5f-df11-ae90-00155d2e3002}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Leads by Owner (Tag Chart)" displayName="Leads by Owner (Tag Chart)" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{b92a5119-193a-e711-80e3-00155d42a416}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Leads by Source (DOUGHNUT)" displayName="Leads by Source (DOUGHNUT)" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{d311600c-163a-e711-80e3-00155d42a416}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="59" schemaName="Leads by Rating" displayName="Leads by Rating" parentSchemaName="lead" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{f5976c58-5693-de11-97d4-00155da3b01e}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Information" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Leads Dashboard" parentDisplayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+        <Dependent type="60" displayName="Leads Dashboard" parentDisplayName="Lead" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/ActivityFeeds.Form.js" displayName="msdyn_/ActivityFeeds.Form.js" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/RecordWall.htm" displayName="msdyn_/RecordWall.htm" solution="ActivityFeedsCore (9.0.0.0005)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Lead" id="{9886ead0-4fcc-4747-9a18-08e7a9a6de71}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="9" schemaName="hsl_purpose" displayName="Purpose" solution="Active" />
+        <Dependent type="2" schemaName="hsl_purpose" displayName="Purpose" parentSchemaName="hsl_type" parentDisplayName="Type" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>
