@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21062.128" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.21063.125" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>SampleApplication</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Sample Application" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.12</Version>
+    <Version>1.0.0.14</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Crc829f</UniqueName>
@@ -80,11 +80,12 @@
     <RootComponents>
       <RootComponent type="1" schemaName="category" behavior="0" />
       <RootComponent type="1" schemaName="cr846_newtestentity" behavior="0" />
+      <RootComponent type="1" schemaName="cr846_test123" behavior="0" />
       <RootComponent type="1" schemaName="cr846_testentity" behavior="0" />
       <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
       <RootComponent type="1" schemaName="lead" behavior="0" />
-      <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" />
+      <RootComponent type="60" id="{9a14ebb4-143e-e711-80e1-00155d871bb4}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
