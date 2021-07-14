@@ -4,7 +4,7 @@
 
 param(
 [string]$CrmConnectionString ="AuthType=ClientSecret;url=https://ztmsdev.crm8.dynamics.com/;ClientId=50908331-b7a9-449c-b2d9-9e1fc83756a7;ClientSecret=.zO3~f1.Mwt.oN66rahdc~p6Tk5H2Avq.p",
-[string]$PackageName = "ZTPackageDeployment" ,
+[string]$PackageName = "HSL.NFUM.PackageDeployer.dll" ,
 [string]$PackageDirectory = "D:\a\1\s\ZTPackageDeployment",
 [string]$LogsDirectory = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\logs",
 [string]$PackageDeploymentPath ="D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\tcpm2",
