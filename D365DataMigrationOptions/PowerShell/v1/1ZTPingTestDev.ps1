@@ -2,7 +2,7 @@
 # Ping.ps1
 #
 param(
-    $CrmConnectionString = "AuthType=ClientSecret;url=https://ztdev.crm11.dynamics.com/;ClientId=c2b575f9-ef65-490b-8741-800f067f2111;ClientSecret=22-OC1YovwX38F~13.K-I1gyusuh4_iUZo"
+    $CrmConnectionString = "AuthType=ClientSecret;url=https://ztmsdev.crm8.dynamics.com/;ClientId=50908331-b7a9-449c-b2d9-9e1fc83756a7;ClientSecret=.zO3~f1.Mwt.oN66rahdc~p6Tk5H2Avq.p"
 )
 
 $ErrorActionPreference = "Stop"
