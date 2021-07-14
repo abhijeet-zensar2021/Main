@@ -11,8 +11,7 @@ param(
 [string]$ToolingConnectorModulePath ="D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\tcpm",
 [string]$Timeout = '00:30:00', #optional timeout for Import-CrmPackage, default to 1 hour and 20 min. See https://technet.microsoft.com/en-us/library/dn756301.aspx
 [int]$CrmConnectionTimeout = 2, 
-#[string]$RuntimePackageSettings,
-[string]$RuntimePackageSettings = "D:\a\1\s\ZTPackageDeployment\HSL.NFUM.PackageDeployer.dll",
+[string]$RuntimePackageSettings,
 [string]$UnpackFilesDirectory
 )
 
