@@ -3,12 +3,12 @@
 #
 
 param(
-[string]$CrmConnectionString,
-[string]$PackageName,
-[string]$PackageDirectory,
-[string]$LogsDirectory = '',
-[string]$PackageDeploymentPath,
-[string]$ToolingConnectorModulePath,
+[string]$CrmConnectionString ="AuthType=Office365;url=https://ztmsdev.crm8.dynamics.com/;UserName=Shalini@ztmsd365.onmicrosoft.com;Password=Zensar@1234",
+[string]$PackageName = "ZTPackageDeployment" ,
+[string]$PackageDirectory = "D:\a\1\s\ZTPackageDeployment",
+[string]$LogsDirectory = "D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\logs",
+[string]$PackageDeploymentPath ="D:\a\1\s\D365DataMigrationOptions\HSL.NFUM.PackageDeployer.dll" ,
+[string]$ToolingConnectorModulePath ="D:\a\1\s\D365DataMigrationOptions\PowerShell\v1\tcpm",
 [string]$Timeout = '00:30:00', #optional timeout for Import-CrmPackage, default to 1 hour and 20 min. See https://technet.microsoft.com/en-us/library/dn756301.aspx
 [int]$CrmConnectionTimeout = 2, 
 [string]$RuntimePackageSettings,
