@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <EntityRelationship Name="business_unit_hsl_configsetting" />
+  <EntityRelationship Name="business_unit_hsl_testentity" />
   <EntityRelationship Name="business_unit_hsl_type" />
   <EntityRelationship Name="lk_hsl_configsetting_createdby" />
   <EntityRelationship Name="lk_hsl_configsetting_modifiedby" />
+  <EntityRelationship Name="lk_hsl_testentity_createdby" />
+  <EntityRelationship Name="lk_hsl_testentity_modifiedby" />
   <EntityRelationship Name="lk_hsl_type_createdby" />
   <EntityRelationship Name="lk_hsl_type_modifiedby" />
   <EntityRelationship Name="owner_hsl_configsetting" />
+  <EntityRelationship Name="owner_hsl_testentity" />
   <EntityRelationship Name="owner_hsl_type" />
   <EntityRelationship Name="team_hsl_configsetting" />
+  <EntityRelationship Name="team_hsl_testentity" />
   <EntityRelationship Name="team_hsl_type" />
   <EntityRelationship Name="user_hsl_configsetting" />
+  <EntityRelationship Name="user_hsl_testentity" />
   <EntityRelationship Name="user_hsl_type" />
 </EntityRelationships>
