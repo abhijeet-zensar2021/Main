@@ -21,4 +21,4 @@ git commit -m "Changes committed"
 
 git push origin HEAD:"$($FeatureBranch)"
 
-Write-Host "Package Uploaded to ADO"
+Write-Host "Solution zip file and extracted files uploaded to the feature branch!"

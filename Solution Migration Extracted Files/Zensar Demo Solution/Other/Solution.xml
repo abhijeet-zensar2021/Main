@@ -6,7 +6,7 @@
       <LocalizedName description="Zensar Demo Solution" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.62</Version>
+    <Version>1.0.0.63</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>hsl</UniqueName>
@@ -78,6 +78,7 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="hsl_configsetting" behavior="0" />
       <RootComponent type="1" schemaName="hsl_type" behavior="0" />
     </RootComponents>
     <MissingDependencies>
