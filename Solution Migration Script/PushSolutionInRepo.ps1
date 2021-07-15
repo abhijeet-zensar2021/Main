@@ -1,17 +1,24 @@
+param (
+    $UserEmail = $UserEmail,
+    $UserName = $UserName,
+    $FeatureBranch = $FeatureBranch    
+)
+
 Write-Host "Configure user name and email"
 
-git config user.email $(UserEmail)
-git config user.name $(UserName)
+git config --global user.email "$($UserEmail)"
+git config --global user.name "$($UserName)"
 
 Write-Host "Checkout Feature  Branch"
 
-git checkout $(FeatureBranch)
+git checkout $($FeatureBranch)
 
 Write-Host "Stage all changes"
 git add -A
 
 Write-Host "Commit all changes"
-git commit -m "Adding file"
-git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin $(FeatureBranch)
+git commit -m "Changes committed"
+
+git push origin HEAD:"$($FeatureBranch)"
 
 Write-Host "Package Uploaded to ADO"
