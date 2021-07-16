@@ -101,6 +101,7 @@
       <field displayname="Team Name" name="name" type="string" />
       <field displayname="Team Type" name="teamtype" type="optionsetvalue" />
       <field displayname="Yomi Name" name="yominame" type="string" />
+      <field displayname="Business Unit" name="businessunitid" type="guid" primaryKey="true" />
     </fields>
     <filter>&lt;filter type="and"&gt;
       &lt;condition attribute="isdefault" operator="eq" value="0" /&gt;
