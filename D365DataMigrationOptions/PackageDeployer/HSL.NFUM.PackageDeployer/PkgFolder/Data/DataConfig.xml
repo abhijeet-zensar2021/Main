@@ -1,0 +1,107 @@
+<ImportConfig>
+  <CrmImports>  
+    <ImportItem>
+      <Name>Teams</Name>
+      <FileName>team\teams.xlsx</FileName>
+      <LogicalName>team</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+	<ImportItem>
+      <Name>Config Settings</Name>
+      <FileName>hsl_configsetting\hsl_configsettings.xlsx</FileName>
+      <LogicalName>hsl_configsetting</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Calendar</Name>
+      <FileName>calendar\calendars.xlsx</FileName>
+      <LogicalName>calendar</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Calendar Rules</Name>
+      <FileName>calendarrule\calendarrules.xlsx</FileName>
+      <LogicalName>calendarrule</LogicalName>
+      <ImportType>Calendar</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Product Cover</Name>
+      <FileName>hsl_productcover\hsl_productcovers.xlsx</FileName>
+      <LogicalName>hsl_productcover</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Action Types</Name>
+      <FileName>hsl_type_action_type\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Document Metadata</Name>
+      <FileName>hsl_type_document_metadata\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Reopen Reasons</Name>
+      <FileName>hsl_type_reopen_reason\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Withdrawal Reasons</Name>
+      <FileName>hsl_type_withdrawal_reason\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Complaint Root Cause</Name>
+      <FileName>hsl_type_root_cause\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Complaint Service Type</Name>
+      <FileName>hsl_type_service_type\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Quality Review Type</Name>
+      <FileName>hsl_type_qualityreview\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Change Reason</Name>
+      <FileName>hsl_type_change_reason\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Type Preference Change Reason</Name>
+      <FileName>hsl_type_preference_change_reason\hsl_types.xlsx</FileName>
+      <LogicalName>hsl_type</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Knowledge Articles</Name>
+      <FileName>kbarticles\knowledgearticles.xlsx</FileName>
+      <LogicalName>knowledgearticle</LogicalName>
+      <ImportType>Standard</ImportType>
+    </ImportItem>
+    <ImportItem>
+      <Name>Document Templates</Name>
+      <FileName>documenttemplate\documenttemplates.xlsx</FileName>
+      <LogicalName>documenttemplate</LogicalName>
+      <ImportType>DocumentTemplate</ImportType>
+    </ImportItem>
+    <!-- Takes an update to get it to import properly with security roles -->
+    <ImportItem>
+      <Name>Document Templates</Name>
+      <FileName>documenttemplate\documenttemplates.xlsx</FileName>
+      <LogicalName>documenttemplate</LogicalName>
+      <ImportType>DocumentTemplate</ImportType>
+    </ImportItem>
+  </CrmImports>
+</ImportConfig>
